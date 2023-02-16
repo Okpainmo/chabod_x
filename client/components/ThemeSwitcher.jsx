@@ -44,7 +44,10 @@ function ThemeSwitcher() {
     console.log(`${storedTheme} selected`);
   }, [storedTheme]);
   return (
-    <div className="theme-switcher flex items-center lg:mr-6">
+    <div
+      className="theme-switcher flex items-center lg:mr-6 h-[30px] w-[30px] p-[5.25px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
+        border bg--secondary_trans"
+    >
       <button
         type="button"
         className={`dark-mode-switch cursor-pointer  ${

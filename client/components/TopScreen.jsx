@@ -16,20 +16,20 @@ function TopScreen() {
         />
       </div>
       <div className="seller-intro px-4">
-        <div className="mt-12 mb-3 text-3xl md:text-4xl font-bold poppins text--colors_default">
+        <div className="mt-12 mb-3 text-2xl sm:text-3xl md:text-4xl font-bold poppins text--colors_default">
           I'm Andrew James Okpainmo
         </div>
-        <span className="text--colors_secondary text-xl">
+        <span className="text--colors_secondary md:text-xl">
           I am a full-stack developer, a blockchain developer, and a technical writer.
         </span>
       </div>
       <button
         type="button"
-        className="text-white connect btn--regular px-6 py-3 w-full text-xl mt-8 xsm:w-[400px] xsm:mt-8"
+        className="text-white connect btn--regular px-6 py-3 w-full mt-8 xsm:w-[400px] xsm:mt-8"
       >
         Let's Connect
       </button>
-      <div className="mt-16 text-xl font-bold poppins flex items-center justify-center gap-1">
+      <div className="mt-10 sm:mt-16 sm:text-xl font-bold poppins flex items-center justify-center gap-1">
         More about me{' '}
         <svg
           xmlns="http://www.w3.org/2000/svg"

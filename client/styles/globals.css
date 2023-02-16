@@ -179,7 +179,7 @@ regular styles
 }
 
 .section-title {
-  @apply after:mt-3 after:w-[100px] after:block after:bg--primary after:rounded-xl after:h-[6px] after:mx-auto;
+  @apply after:mt-1 sm:after:mt-3 after:w-[70px] sm:after:w-[100px] after:block after:bg--primary after:rounded-xl after:h-[6px] after:mx-auto;
 }
 
 /* .skill-tag {

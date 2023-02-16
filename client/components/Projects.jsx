@@ -6,8 +6,8 @@ import projectBanner from '../assets/images/bg.jpg';
 function Projects() {
   return (
     <section className="projects text-center mt-[150px] lg:mt-[200px] mb-[150px] px-3 sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-full lg:px-8">
-      <h1 className="section-title text-4xl poppins poppins font-bold">Projects </h1>
-      <h3 className="text-xl text--colors_secondary mt-6 mb-6 lg:mb-12 poppins">
+      <h1 className="text-2xl sm:text-4xl section-title poppins font-bold">Projects </h1>
+      <h3 className="text-base sm:text-xl text--colors_secondary my-4 sm:my-6 lg:mb-12 poppins">
         A selection of some of my top projects
       </h3>
       <div className="flex flex-col gap-y-12 lg:gap-y-20 mb-16">
@@ -21,8 +21,10 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
@@ -100,14 +102,16 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
               velit earum tenetur qui sint voluptatum vel maiores...
             </div>
-            <span className="underline text-sm text--colors_primary">read full project story</span>
+            <span className="underline">Read full project story</span>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Firebase
@@ -179,14 +183,16 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
               velit earum tenetur qui sint voluptatum vel maiores...
             </div>
-            <span className="underline text-sm text--colors_primary">read full project story</span>
+            <span className="underline">Read full project story</span>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Firebase
@@ -258,14 +264,16 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
               velit earum tenetur qui sint voluptatum vel maiores...
             </div>
-            <span className="underline text-sm text--colors_primary">read full project story</span>
+            <span className="underline">Read full project story</span>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Firebase
@@ -337,14 +345,16 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
               velit earum tenetur qui sint voluptatum vel maiores...
             </div>
-            <span className="underline text-sm text--colors_primary">read full project story</span>
+            <span className="underline">Read full project story</span>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Firebase
@@ -416,14 +426,16 @@ function Projects() {
               alt="seller-photo"
             />
           </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0">
-            <div className="project-name poppins text-2xl font-bold mb-2 lg:mb-3">Project Name</div>
+          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[base]">
+            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+              Project Name
+            </div>
             <div className="project-brief mb-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
               quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
               velit earum tenetur qui sint voluptatum vel maiores...
             </div>
-            <span className="underline text-sm text--colors_primary">read full project story</span>
+            <span className="underline">Read full project story</span>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Firebase
@@ -486,7 +498,10 @@ function Projects() {
           </div>
         </div>
       </div>
-      <a href="gh.com" className="text--colors_primary py-3 btn--outline text-sm px-4 xsm:px-10">
+      <a
+        href="gh.com"
+        className="text--colors_primary py-3 btn--outline text-sm px-4 xsm:px-10 hidden"
+      >
         Checkout more projects on github
       </a>
     </section>

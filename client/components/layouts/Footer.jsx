@@ -4,11 +4,11 @@ import NewsletterSection from '../NewsletterSection';
 
 function Footer() {
   return (
-    <footer className="border-t pt-16 pb-24 sm:py-16 px-3 xsm:px-8 sm:px-12 md:px-20 lg:flex lg:w-[80%] lg:mx-auto">
+    <footer className="border-t py-16 sm:pb-24 sm:py-16 px-3 xsm:px-8 sm:px-12 md:px-20 lg:flex lg:w-[80%] lg:mx-auto">
       {/* <section className="flex flex-col lg:flex-row lg:flex-wrap justify-between"> */}
       {/* <section className="menu-items flex justify-between gap-x-4 md:w-1/2 lg:w-1/3"> */}
       <section className="flex gap-6 lg:w-1/2">
-        <div className="min-h-[180px] w-1/3">
+        <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
             <li>Crypto</li>
             <li>Forex</li>
@@ -16,7 +16,7 @@ function Footer() {
             <li>Exchange</li>
           </ul>
         </div>
-        <div className="min-h-[180px] w-1/3">
+        <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
             <li>Crypto</li>
             <li>Forex</li>

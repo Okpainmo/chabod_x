@@ -8,8 +8,8 @@ function Contacts() {
   });
 
   return (
-    <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px]">
-      <h1 className="section-title text-4xl poppins poppins font-bold">Let's Connect</h1>
+    <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-base">
+      <h1 className="section-title text-2xl sm:text-4xl poppins font-bold">Let's Connect</h1>
       <div className="contacts-details mt-20 text-center md:flex md:justify-between">
         <div className="phone">
           <svg
@@ -84,13 +84,13 @@ function Contacts() {
         </div>
       </div>
       <div className="form-wrapper mt-20 md:mt-32">
-        <h3 className="poppins text-3xl font-bold">Drop A Message</h3>
+        <h3 className="poppins text-2xl font-bold">Drop A Message</h3>
         <form
           //   onSubmit={handleSubmit}
           className="contact-form xsm:px-[30px] py-[30px]"
         >
           <div className="input-group flex flex-col">
-            <label className="nunito-sans font-bold mb-2" htmlFor="name">
+            <label className="nunito-sans mb-2" htmlFor="name">
               Name
             </label>
             <input
@@ -108,7 +108,7 @@ function Contacts() {
             />
           </div>
           <div className="input-group flex flex-col mt-6">
-            <label className="nunito-sans font-bold mb-2" htmlFor="email">
+            <label className="nunito-sans mb-2" htmlFor="email">
               Email address
             </label>
             <input
@@ -127,7 +127,7 @@ function Contacts() {
             <span className="mt-2 hidden">your email is safe with me 👍.</span>
           </div>
           <div className="input-group flex flex-col mt-6">
-            <label className="nunito-sans font-bold mb-2" htmlFor="email">
+            <label className="nunito-sans mb-2" htmlFor="email">
               Message
             </label>
             <textarea
@@ -147,7 +147,7 @@ function Contacts() {
             ></textarea>
           </div>
           <button
-            className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[16px]"
+            className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[14px]"
             type="submit"
             // onClick={handleSubmit}
             // onClick={(e) => {

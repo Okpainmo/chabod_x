@@ -3,8 +3,8 @@ import React from 'react';
 function AboutMe() {
   return (
     <section className="about-me px-3 text-center xsm:w-[85%] xsm:mx-auto lg:w-[60%]">
-      <h1 className="section-title text-4xl poppins poppins font-bold">About Me</h1>
-      <div className="about-text text--colors_secondary mt-8">
+      <h1 className="section-title text-2xl sm:text-4xl poppins poppins font-bold">About Me</h1>
+      <div className="about-text text--colors_secondary mt-8 text-[12px] sm:text-base leading-[22px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, id dolorem voluptates
         repellendus debitis et rerum, odit fugit recusandae perferendis amet necessitatibus!
         Praesentium, quam. Similique quae laudantium deleniti non eaque quo alias, labore neque in
@@ -63,7 +63,7 @@ function AboutMe() {
       </button> */}
       <button
         type="button"
-        className="text-white connect btn--regular px-6 py-3 w-full text-xl mt-10 xsm:w-[400px]"
+        className="text-white connect btn--regular px-6 py-3 w-full mt-10 xsm:w-[400px]"
       >
         Download my resume
       </button>
