@@ -45,7 +45,7 @@ function ThemeSwitcher() {
   }, [storedTheme]);
   return (
     <div
-      className="theme-switcher flex items-center lg:mr-6 h-[30px] w-[30px] p-[5.3px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
+      className="theme-switcher flex items-center lg:mr-6 h-[30px] w-[30px] py-[5.3px] px-[5.5px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
         border bg--secondary_trans"
     >
       <button
