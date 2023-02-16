@@ -1,7 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const DynamicThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), {
+const DynamicThemeSwitcher = dynamic(() => import('../../ThemeSwitcher'), {
   ssr: false
 });
 

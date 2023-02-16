@@ -1,12 +1,12 @@
 import React from 'react';
-import MainAppLayout from '../components/layouts/MainAppLayout';
-import MobileNavbar from '../components/layouts/MobileNavbar';
-import Navbar from '../components/layouts/Navbar';
-import TopScreen from '../components/TopScreen';
-import AboutMe from '../components/AboutMe';
-import Projects from '../components/Projects';
-import Contacts from '../components/Contacts';
-import Blog from '../components/Blog';
+import MainAppLayout from '../components/portfolio/layouts/MainAppLayout';
+import MobileNavbar from '../components/portfolio/layouts/MobileNavbar';
+import Navbar from '../components/portfolio/layouts/Navbar';
+import TopScreen from '../components/portfolio/TopScreen';
+import AboutMe from '../components/portfolio/AboutMe';
+import Projects from '../components/portfolio/Projects';
+import Contacts from '../components/portfolio/Contacts';
+import Blog from '../components/portfolio/Blog';
 
 function index() {
   return (

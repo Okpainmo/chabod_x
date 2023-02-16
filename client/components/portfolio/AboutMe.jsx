@@ -13,34 +13,34 @@ function AboutMe() {
         Impedit eligendi corporis eos, sint voluptas recusandae sit voluptate vitae provident beatae
         natus repellat nam obcaecati doloribus in ab quas iusto modi ipsam. Beatae non illo
         <div className="my-skills w-full flex justify-center pt-6 pb-10 flex-wrap gap-x-3 md:w-[60%] md:mx-auto">
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
-          <div className="skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             firebase
           </div>
         </div>
