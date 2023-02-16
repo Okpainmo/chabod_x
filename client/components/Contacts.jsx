@@ -14,8 +14,8 @@ function Contacts() {
         <div className="phone">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
+            width="25"
+            height="25"
             fill="currentColor"
             className="bi bi-phone mx-auto"
             viewBox="0 0 16 16"
@@ -32,8 +32,8 @@ function Contacts() {
           <div className="emails flex flex-col gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="25"
+              height="25"
               fill="currentColor"
               className="bi bi-envelope mx-auto"
               viewBox="0 0 16 16"
