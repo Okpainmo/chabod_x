@@ -41,9 +41,9 @@ google font-customization
     font-family: 'Nunito Sans', sans-serif;
   }
 
-  /* .montserrat {
+  .montserrat {
     font-family: 'Montserrat', sans-serif;
-  } */
+  }
 }
 
 @layer utilities {
