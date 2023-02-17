@@ -44,6 +44,10 @@ google font-customization
   .montserrat {
     font-family: 'Montserrat', sans-serif;
   }
+
+  .post-serif {
+    font-family: 'Libre Baskerville', serif;
+  }
 }
 
 @layer utilities {
@@ -185,3 +189,7 @@ regular styles
 /* .skill-tag {
   @apply text-white;
 } */
+
+.post-page_bg--light {
+  @apply bg-purple-100;
+}
