@@ -190,6 +190,6 @@ regular styles
   @apply text-white;
 } */
 
-.post-page_bg--light {
-  @apply bg-purple-100;
+.blog_bg--primary {
+  @apply bg-purple-100 dark:bg-purple-300;
 }
