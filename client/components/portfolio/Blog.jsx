@@ -2,12 +2,12 @@ import React from 'react';
 
 function Blog() {
   return (
-    <section className="blog mt-[100px] mb-[70px] md:mb-[150px] text-center px-3 sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[60%]">
+    <section className="blog mt-[100px] mb-[70px] md:mb-[150px] text-center px-3 sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[50%]">
       <h1 className="section-title text-2xl sm:text-4xl poppins font-bold mb-12">Read My Blog</h1>
       {/* <h3 className="text-xl text--colors_secondary mt-6 mb-6 lg:mb-12 poppins">
         A collection of my recently published articles.
       </h3> */}
-      <div className="blog-posts text-[12px] sm:text-[base]">
+      <div className="blog-posts text-[12px] sm:text-[14px]">
         <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
             Lorem ipsum dolor, sit amet consectetur adipisicing.

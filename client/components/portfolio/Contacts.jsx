@@ -8,7 +8,7 @@ function Contacts() {
   });
 
   return (
-    <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-base">
+    <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-[14px]">
       <h1 className="section-title text-2xl sm:text-4xl poppins font-bold">Let's Connect</h1>
       <div className="contacts-details mt-20 text-center md:flex md:justify-between">
         <div className="phone">

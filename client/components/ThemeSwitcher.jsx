@@ -44,15 +44,11 @@ function ThemeSwitcher() {
     console.log(`${storedTheme} selected`);
   }, [storedTheme]);
   return (
-    <div
-      className="theme-switcher flex items-center lg:mr-6 h-[30px] w-[30px] p-[5.1px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
-        border bg--secondary_trans"
-    >
+    <div className="theme-switcher flex items-center">
       <button
         type="button"
-        className={`dark-mode-switch cursor-pointer  ${
-          !isLight && 'hidden'
-        } text--colors_secondary`}
+        className={`dark-mode-switch cursor-pointer lg:mr-6 h-[30px] w-[30px] p-[5.1px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
+        border bg--secondary_trans ${!isLight && 'hidden'} text--colors_secondary`}
         onClick={setDarkTheme}
       >
         <svg
@@ -69,7 +65,8 @@ function ThemeSwitcher() {
       </button>
       <button
         type="button"
-        className={`light-mode-switch cursor-pointer text--colors_secondary ${isLight && 'hidden'}`}
+        className={`light-mode-switch cursor-pointer text--colors_secondary lg:mr-6 h-[30px] w-[30px] p-[5.1px] lg:w-[40px] lg:h-[40px] lg:p-[10px] rounded-[100%] 
+        border bg--secondary_trans ${isLight && 'hidden'}`}
         onClick={setLightTheme}
       >
         <svg

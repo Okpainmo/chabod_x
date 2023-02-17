@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 const DynamicThemeSwitcher = dynamic(() => import('../../ThemeSwitcher'), {
@@ -12,21 +11,17 @@ function Navbar() {
     <nav className="top-navbar bg--glass2 w-full px-3 py-1 sm:py-2 shadow-sm dark:border-b fixed z-50 top-0 left-0 right-0 text--colors_default nunito-sans">
       <div className="lg:w-[80%] flex justify-between lg:mx-auto items-center">
         <div className="nav-left user-logo text-3xl md:text-4xl font-bold poppins text--colors_primary">
-          <Link href="/">aj.</Link>
+          aj.
         </div>
         <ul
           className="nav-links hidden lg:flex gap-16 items-center text--secondary"
           style={{ fontSize: '12px' }}
         >
-          <li className="poppins">
-            <Link href="/">Home</Link>
-          </li>
+          <li className="poppins">Home</li>
           <li className="poppins">About Me</li>
           <li className="poppins">Projects</li>
           <li className="poppins">Contact</li>
-          <li className="poppins">
-            <Link href="/blog">Blog</Link>
-          </li>
+          <li className="poppins">Blog</li>
         </ul>
 
         <DynamicThemeSwitcher />

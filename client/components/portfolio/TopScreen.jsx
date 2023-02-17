@@ -19,7 +19,7 @@ function TopScreen() {
         <div className="mt-12 mb-3 text-2xl sm:text-3xl md:text-4xl font-bold poppins text--colors_default">
           I'm Andrew James Okpainmo
         </div>
-        <span className="text--colors_secondary md:text-xl">
+        <span className="text--colors_secondary md:text-[18px]">
           I am a full-stack developer, a blockchain developer, and a technical writer.
         </span>
       </div>
