@@ -173,7 +173,7 @@ function ProjectStory() {
           </section>
           <section className="story-group next-project pb-16 md:pb-24">
             <h3 className="mb-4 mt-6 text-xl sm:text-3xl poppins font-bold">Next Project</h3>
-            <div className="project-banner-wrapper lg:w-[45%] mt-12">
+            <div className="project-banner-wrapper lg:w-[45%] mt-6">
               <Image
                 className="w-full shadow-lg"
                 src={projectBanner}
@@ -182,9 +182,7 @@ function ProjectStory() {
                 alt="seller-photo"
               />
             </div>
-            <h3 className="project-name text-lg sm:text-3xl mt-4 poppins font-bold">
-              Project name
-            </h3>
+            <h3 className="project-name text-lg sm:text-xl mt-4 poppins font-bold">Project name</h3>
             <p className="project-intro mt-2 lg:w-[70%]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum deserunt nesciunt
               consequatur sed? Eveniet.
