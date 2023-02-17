@@ -9,7 +9,7 @@ function Footer() {
       {/* <section className="menu-items flex justify-between gap-x-4 md:w-1/2 lg:w-1/3"> */}
       <section className="lg:w-1/2 flex justify-between">
         <div className="tutorial-links-wrapper w-8/12">
-          <h3 className="font-bold mb-4">Blog Contents</h3>
+          <h3 className="font-bold mb-4 montserrat text--colors_secondary">Blog Contents</h3>
           <div className="flex">
             <div className="min-h-[150px] w-1/2">
               <ul className="flex flex-col gap-y-3 text-[12px]">
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="tutorial-links-wrapper w-4/12">
-          <h3 className="font-bold mb-4">Links</h3>
+          <h3 className="font-bold mb-4 montserrat text--colors_secondary">Links</h3>
           <div className="min-h-[150px] w-full">
             <ul className="flex flex-col gap-y-3 text-[12px]">
               <li>Crypto</li>

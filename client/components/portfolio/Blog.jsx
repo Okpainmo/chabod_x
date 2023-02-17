@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Blog() {
   return (
@@ -17,9 +18,9 @@ function Blog() {
             nostrum nulla expedita. Iste quidem dolor at fuga sunt.
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <Link className="underline text--colors_primary" href="/blog">
               Read post
-            </a>
+            </Link>
           </div>
         </div>
         <div className="post text-center mb-16">

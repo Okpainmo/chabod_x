@@ -3,7 +3,7 @@ import React from 'react';
 function NewsletterSection() {
   return (
     <div className="newsletter-section my-8 lg:mt-0 lg:w-1/2">
-      <h2 className="text--colors_secondary text-base font-bold">Join My NewsLetter</h2>
+      <h2 className="text--colors_secondary text-base font-bold montserrat">Join My NewsLetter</h2>
       <span className="text--colors_secondary text-[12px]">
         Join our newsletter, and get a weekly update of our awesome new products and bonus offers
       </span>
