@@ -13,13 +13,13 @@ function index() {
     <>
       <Navbar />
       <MainAppLayout>
-        <div className="min-h-screen">
+        <main className="min-h-screen">
           <TopScreen />
           <AboutMe />
           <Projects />
           <Contacts />
           <Blog />
-        </div>
+        </main>
       </MainAppLayout>
       <MobileNavbar />
     </>

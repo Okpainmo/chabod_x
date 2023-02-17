@@ -11,7 +11,7 @@ function ProjectStory() {
     <>
       <Navbar />
       <MainAppLayout>
-        <div className="min-h-screen pt-16 sm:pt-24 text-[14px] leading-[25px] px-3 sm:w-[80%] sm:mx-auto">
+        <main className="min-h-screen pt-16 sm:pt-24 text-[14px] leading-[25px] px-3 sm:w-[80%] sm:mx-auto">
           <h1 className="project-name text-2xl sm:text-4xl poppins font-bold">Project name</h1>
           <div className="story-group mt-4 sm:mt-10">
             <div className="project-banner-wrapper lg:w-[45%]">
@@ -193,7 +193,7 @@ function ProjectStory() {
               </span>
             </Link>
           </section>
-        </div>
+        </main>
       </MainAppLayout>
       <MobileNavbar />
     </>
