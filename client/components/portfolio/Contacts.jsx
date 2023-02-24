@@ -127,7 +127,7 @@ function Contacts() {
             <span className="mt-2 hidden">your email is safe with me 👍.</span>
           </div>
           <div className="input-group flex flex-col mt-6">
-            <label className="nunito-sans mb-2" htmlFor="email">
+            <label className="nunito-sans mb-2" htmlFor="message">
               Message
             </label>
             <textarea
@@ -150,10 +150,10 @@ function Contacts() {
             className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[14px]"
             type="submit"
             // onClick={handleSubmit}
-            // onClick={(e) => {
-            //   e.preventDefault();
-            //   console.log(form);
-            // }}
+            onClick={(e) => {
+              e.preventDefault();
+              console.log(form);
+            }}
           >
             Submit Message
           </button>

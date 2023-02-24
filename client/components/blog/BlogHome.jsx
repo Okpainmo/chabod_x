@@ -5,16 +5,16 @@ import Emoji from '../Emoji';
 function BlogHome() {
   return (
     <div className="">
-      <section className="blog_bg--primary px-3 pt-20 sm:pt-24 md:pt-32 xsm:px-[20px]">
+      <section className="blog_bg--primary px-3 pt-28 sm:pt-24 md:pt-32 xsm:px-[20px]">
         <div className="blog-intro pb-10 md:pb-20 sm:w-[80%] xsm:mx-auto">
           <h1 className="poppins font-bold text-3xl md:text-4xl">
             Hey <Emoji symbol="👋" label="waving-hand" />, <br />
             Welcome to my blog.{' '}
           </h1>
-          <p className="mt-4">
-            <span className="text-lg font-bold montserrat">
+          <p className="mt-10">
+            <span className="text-base montserrat">
               A minimalist blog about everything "software engineering" - From developer health, to
-              software engineering resources, content creation, and more.
+              software engineering resources, tutorials, <br /> content creation, and more.
             </span>
             {/* <br /> <br />
           <span className="underline">Enjoy your time here.</span> */}

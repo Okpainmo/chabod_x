@@ -29,7 +29,7 @@ function TopScreen() {
       >
         Let's Connect
       </button>
-      <div className="mt-10 sm:mt-16 sm:text-xl font-bold poppins flex items-center justify-center gap-1">
+      <div className="mt-10 sm:mt-16 sm:text-base font-bold poppins flex items-center justify-center gap-1">
         More about me{' '}
         <svg
           xmlns="http://www.w3.org/2000/svg"

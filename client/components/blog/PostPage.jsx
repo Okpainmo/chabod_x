@@ -2,7 +2,7 @@ import React from 'react';
 
 function PostPage() {
   return (
-    <div className="">
+    <div className="post-page">
       <section className="post-top pb-10 px-3 pt-40 blog_bg--primary xsm:px-[20px]">
         <div className="sm:w-[80%] sm:mx-auto">
           <div className="tags">
@@ -66,7 +66,7 @@ function PostPage() {
           <h3 className="montserrat font-bold text--colors_secondary text-lg mb-3">
             Table of contents
           </h3>
-          <ul className="flex-col gap-y-3 lg:flex list-none post-serif lg:justify-between text-[12px]">
+          <ul className="flex-col gap-y-3 lg:flex list-none nunito-sans lg:justify-between text-[12px]">
             <li
               className="relative before:w-[7px]
            before:h-[7px] before:block before:bg--secondary before:absolute before:left-[-20px] before:top-[5px]"
