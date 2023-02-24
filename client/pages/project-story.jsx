@@ -13,6 +13,38 @@ function ProjectStory() {
       <MainAppLayout>
         <main className="min-h-screen pt-16 sm:pt-24 text-[14px] leading-[25px] px-3 sm:w-[80%] sm:mx-auto">
           <h1 className="project-name text-2xl sm:text-4xl poppins font-bold">Project name</h1>
+          <div className="my-skills w-full flex justify-start pt-2 pb-4 md:pb-10 flex-wrap gap-x-3 md:w-[60%] md:mx-auto lg:mx-0">
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+            <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+              firebase
+            </div>
+          </div>
           <div className="story-group mt-4 sm:mt-10">
             <div className="project-banner-wrapper lg:w-[45%]">
               <Image
