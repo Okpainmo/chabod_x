@@ -138,6 +138,12 @@ colour configuration using native tailwind css colours
   .no-shade {
     box-shadow: none;
   }
+
+  input,
+  textarea,
+  select {
+    @apply text-slate-800;
+  }
 }
 
 /* 
