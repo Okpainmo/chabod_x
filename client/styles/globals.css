@@ -199,3 +199,19 @@ regular styles
 .blog_bg--primary {
   @apply bg-purple-100 dark:bg-purple-300;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation-name: rotate;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
