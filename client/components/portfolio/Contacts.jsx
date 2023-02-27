@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Contacts() {
-  const [form, setForm] = useState({
-    email: '',
-    name: '',
-    message: ''
-  });
-
+function Contacts({ form, setForm, handleSubmit }) {
   return (
     <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-[14px]">
       <h1 className="section-title text-2xl sm:text-4xl poppins font-bold">Let's Connect</h1>
@@ -149,11 +143,11 @@ function Contacts() {
           <button
             className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[14px]"
             type="submit"
-            // onClick={handleSubmit}
-            onClick={(e) => {
-              e.preventDefault();
-              console.log(form);
-            }}
+            onClick={handleSubmit}
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   console.log(form);
+            // }}
           >
             Submit Message
           </button>

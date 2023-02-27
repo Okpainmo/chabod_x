@@ -2,10 +2,10 @@ import React from 'react';
 import Subscribers from './Subscribers';
 // import FloatingNewsLetterButton from '../layouts/FloatingNewsLetterButton';
 
-function NewsLetterManager() {
+function NewsLetterManager({ newsletterData }) {
   return (
     <section className="newsletter-manager pb-20">
-      <Subscribers />
+      <Subscribers newsletterData={newsletterData} />
     </section>
   );
 }

@@ -9,7 +9,7 @@ const DynamicThemeSwitcher = dynamic(() => import('../../ThemeSwitcher'), {
 function Navbar() {
   // { mobileNavOpen }
   return (
-    <nav className="top-navbar bg--glass2 w-full px-3 py-1 sm:py-2 shadow-sm dark:border-b fixed z-50 top-0 left-0 right-0 text--colors_default nunito-sans">
+    <nav className="top-navbar bg--glass2 w-full px-3 py-1 sm:py-2 shadow-sm dark:border-b fixed z-40 top-0 left-0 right-0 text--colors_default nunito-sans">
       <div className="lg:w-[80%] flex justify-between lg:mx-auto items-center">
         <div className="nav-left user-logo text-3xl md:text-4xl font-bold poppins text--colors_primary">
           <Link href="/">aj.</Link>
