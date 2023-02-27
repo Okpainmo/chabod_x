@@ -1,3 +1,4 @@
 {
-  "eslint.workingDirectories": ["./client", "./server"]
+  "eslint.workingDirectories": ["./client", "./server"],
+  "git.ignoreLimitWarning": true
 }
