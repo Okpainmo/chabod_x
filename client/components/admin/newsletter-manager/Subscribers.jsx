@@ -36,7 +36,7 @@ function Subscribers() {
             </button>
           </div>
         </div>
-        <div className="subscriber-card bg--glass2 shadow px-3 py-3 rounded m:dw-[48%]">
+        <div className="subscriber-card bg--glass2 shadow px-3 py-3 rounded md:w-[48%]">
           <div className="sender-info text--colors_primary mb-2">senderemail@email.com</div>
           <div className="date-added text--colors_secondary">Date added: 25th June 2029</div>
           <div className="button-wrappers flex gap-x-3 flex-row-reverse">

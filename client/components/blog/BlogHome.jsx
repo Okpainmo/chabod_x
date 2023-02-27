@@ -21,7 +21,7 @@ function BlogHome() {
           </p>
         </div>
       </section>
-      <section className="xsm:px-[20px] sm:w-[80%] sm:mx-auto px-3">
+      <section className="xsm:px-[20px] sm:w-[80%] sm:mx-auto px-3 pb-16">
         <div className="recent-posts flex flex-col lg:flex-row md:w-[80%] lg:w-full lg:justify-between">
           <section className="recent-post-wrapper mt-6 mb-12 md:mt-16 text-[12px] sm:text-[14px] lg:w-[60%]">
             <h3 className="uppercase font-bold text--colors_secondary mb-4 text-lg montserrat">
