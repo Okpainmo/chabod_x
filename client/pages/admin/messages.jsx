@@ -7,7 +7,7 @@ import AdminOverlay from '../../components/admin/layouts/adminOverlay';
 import MessageReply from '../../components/admin/messages/MessageReply';
 import DashboardMenu from '../../components/admin/layouts/DashboardMenu';
 
-function MessageCenter() {
+function MessageCenter({ messagesData }) {
   const [showMainOverlay, setShowMainOverlay] = useState(false);
 
   const mainOverlayHide = () => {
@@ -27,7 +27,7 @@ function MessageCenter() {
         <main className="lg:flex lg:flex-row lg:justify-between lg:gap-x-10">
           <DashboardMenu />
           <section className="min-h-screen px-3 xsm:px-[20px] sm:px-16 lg:w-[80%]">
-            <Messages mainOverlayShow={mainOverlayShow} />
+            <Messages mainOverlayShow={mainOverlayShow} messagesData={messagesData} />
           </section>
         </main>
       </MainAppLayout>
@@ -36,3 +36,15 @@ function MessageCenter() {
 }
 
 export default MessageCenter;
+
+export async function getServerSideProps() {
+  // const { params } = context;
+  const response = await fetch('https://chabod-x.onrender.com/api/v1/messages/get-all-messages');
+  const messagesData = await response.json();
+
+  return {
+    props: {
+      messagesData
+    }
+  };
+}
