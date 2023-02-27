@@ -3,7 +3,7 @@ const messageModel = require('../models/message');
 
 const sendMessage = async (req, res) => {
   const message = await messageModel.create(req.body);
-  res.status(201).json({ message });
+  res.status(201).json({ requestStatus: 'success', message });
 };
 
 const getAllMessages = async (req, res) => {

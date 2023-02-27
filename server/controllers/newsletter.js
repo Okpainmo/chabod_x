@@ -3,7 +3,7 @@ const subscriberModel = require('../models/subscriber');
 
 const createSubscriber = async (req, res) => {
   const subscriber = await subscriberModel.create(req.body);
-  res.status(201).json({ subscriber });
+  res.status(201).json({ requestStatus: 'success', subscriber });
 };
 
 const getAllSubscribers = async (req, res) => {
