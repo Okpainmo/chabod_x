@@ -1,8 +1,11 @@
 import '../styles/globals.css';
+import PortfolioContextProvider from '../context/PortfolioContext';
 
 export default function App({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <PortfolioContextProvider>
+      <Component {...pageProps} />
+    </PortfolioContextProvider>
     // <main >
     // </main>
   );
