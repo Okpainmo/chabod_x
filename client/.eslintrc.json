@@ -24,6 +24,8 @@
     "jsx-a11y/label-has-associated-control": "off",
     "react/no-unescaped-entities": "off",
     "react/self-closing-comp": "off",
-    "no-console": "off"
+    "react/jsx-no-constructed-context-values": "off",
+    "no-console": "off",
+    "no-alert": "off"
   }
 }
