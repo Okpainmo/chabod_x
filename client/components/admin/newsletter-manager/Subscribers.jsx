@@ -3,8 +3,8 @@ import React from 'react';
 function Subscribers({ newsletterData }) {
   const subscribersDetails = newsletterData.allSubscribers;
   return (
-    <section className="subscribers-section pt-8">
-      <div className="section-top flex justify-between items-center mt-4">
+    <section className="subscribers-section xsm:pt-8">
+      <div className="section-top flex justify-between items-center mt-6">
         <h3 className="montserrat text-xl font-bold text--colors_secondary">
           Subscribers/Mail-list
         </h3>

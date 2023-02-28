@@ -21,12 +21,18 @@ function Navbar() {
           <li className="poppins">
             <Link href="/">Home</Link>
           </li>
-          <li className="poppins">About Me</li>
-          <li className="poppins">Projects</li>
-          <li className="poppins">Contact</li>
-          <li className="poppins">
-            <Link href="/blog">Blog</Link>
-          </li>
+          <a href="#about-section">
+            <li className="poppins">About Me</li>
+          </a>
+          <a href="#projects-section">
+            <li className="poppins">Projects</li>
+          </a>
+          <a href="#contacts-section">
+            <li className="poppins">Contact</li>
+          </a>
+          <a href="#blog-section">
+            <li className="poppins">Blog</li>
+          </a>
         </ul>
 
         <DynamicThemeSwitcher />

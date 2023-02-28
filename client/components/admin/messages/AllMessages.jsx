@@ -6,7 +6,12 @@ function AllMessages({ mainOverlayShow, messagesData }) {
 
   return (
     <section className="message-center_all-messages pb-20 xsm:pt-8">
-      <h3 className="mt-4 montserrat text-xl font-bold text--colors_secondary">Messages</h3>
+      <div className="section-top flex justify-between items-center mt-6">
+        <h3 className="montserrat text-xl font-bold text--colors_secondary">Messages</h3>
+        <div className="subscriber-count montserrat text-md font-bold text--colors_secondary">
+          ({messagesDetails.length})
+        </div>
+      </div>
       <div className="messages flex flex-col gap-y-8 mt-4 md:w-full md:justify-between md:flex-wrap md:flex-row">
         {messagesDetails.map((each) => {
           const { name, createdAt, email, message, id } = each;

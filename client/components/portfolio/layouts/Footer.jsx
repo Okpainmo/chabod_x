@@ -7,21 +7,31 @@ function Footer() {
     <footer className="border-t py-16 sm:pb-24 sm:pt-16 px-3 xsm:px-8 sm:px-12 md:px-20 lg:flex lg:w-[80%] lg:mx-auto">
       {/* <section className="flex flex-col lg:flex-row lg:flex-wrap justify-between"> */}
       {/* <section className="menu-items flex justify-between gap-x-4 md:w-1/2 lg:w-1/3"> */}
-      <section className="flex gap-6 lg:w-1/2">
+      <section className="flex gap-6 lg:w-1/2 montserrat">
         <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
-            <li>Crypto</li>
-            <li>Forex</li>
-            <li>Stocks</li>
-            <li>Exchange</li>
+            <a href="#about-section" className="text--colors_primary">
+              <li>About me</li>
+            </a>
+            <a href="#about-section" className="text--colors_primary">
+              <li>My tech stack</li>
+            </a>
+            <a href="#projects-section" className="text--colors_primary">
+              <li>My projects</li>
+            </a>
           </ul>
         </div>
         <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
-            <li>Crypto</li>
-            <li>Forex</li>
-            <li>Stocks</li>
-            <li>Exchange</li>
+            <a href="#contacts-section" className="text--colors_primary">
+              <li>Contact me</li>
+            </a>
+            <a href="#blog-section" className="text--colors_primary">
+              <li>Read my blog</li>
+            </a>
+            <a href="#top" className="text--colors_primary">
+              <li>Back to top</li>
+            </a>
           </ul>
         </div>
       </section>

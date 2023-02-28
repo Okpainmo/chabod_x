@@ -2,7 +2,10 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <section className="about-me px-3 text-center xsm:w-[85%] xsm:mx-auto lg:w-[60%]">
+    <section
+      className="about-me px-3 text-center xsm:w-[85%] xsm:mx-auto lg:w-[60%] pt-[100px]"
+      id="about-section"
+    >
       <h1 className="section-title text-2xl sm:text-4xl poppins poppins font-bold">About Me</h1>
       <div className="about-text text--colors_secondary mt-8 text-[14px] sm:text-[14px] leading-[22px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, id dolorem voluptates

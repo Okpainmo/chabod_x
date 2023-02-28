@@ -5,7 +5,10 @@ import projectBanner from '../../assets/images/bg.jpg';
 
 function Projects() {
   return (
-    <section className="projects text-center mt-[150px] lg:mt-[200px] mb-[150px] px-3 sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-full lg:px-8">
+    <section
+      className="projects text-center mt-[50px] lg:mt-[200px] pt-[100px] mb-[150px] px-3 sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-full lg:px-8"
+      id="projects-section"
+    >
       <h1 className="text-2xl sm:text-4xl section-title poppins font-bold">Projects </h1>
       <h3 className="text-base sm:text-xl text--colors_secondary my-4 sm:my-6 lg:mb-12 poppins">
         A selection of some of my top projects

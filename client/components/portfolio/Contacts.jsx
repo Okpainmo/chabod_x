@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { PortfolioContext } from '../../context/PortfolioContext';
 
-function Contacts({ form, setForm, handleSubmit }) {
+function Contacts() {
+  const { messageForm, setMessageForm, handleMessageSubmit } = useContext(PortfolioContext);
+
   return (
-    <section className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-[14px]">
+    <section
+      className="contacts-section text-center px-3 mb-[100px] sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] text-[12px] sm:text-[14px] pt-[100px]"
+      id="contacts-section"
+    >
       <h1 className="section-title text-2xl sm:text-4xl poppins font-bold">Let's Connect</h1>
       <div className="contacts-details mt-20 text-center md:flex md:justify-between">
         <div className="phone">
@@ -89,14 +95,15 @@ function Contacts({ form, setForm, handleSubmit }) {
             </label>
             <input
               required
-              value={form.name}
+              value={messageForm.name}
               onChange={(e) => {
-                setForm({
-                  ...form,
+                setMessageForm({
+                  ...messageForm,
                   name: e.target.value
                 });
               }}
               name="name"
+              type="text"
               id="name"
               className="outline-none p-3 border rounded"
             />
@@ -107,14 +114,15 @@ function Contacts({ form, setForm, handleSubmit }) {
             </label>
             <input
               required
-              value={form.email}
+              value={messageForm.email}
               onChange={(e) => {
-                setForm({
-                  ...form,
+                setMessageForm({
+                  ...messageForm,
                   email: e.target.value
                 });
               }}
               name="email"
+              type="text"
               id="email"
               className="p-3 border outline-none rounded"
             />
@@ -128,14 +136,15 @@ function Contacts({ form, setForm, handleSubmit }) {
               required
               cols={20}
               rows={5}
-              value={form.message}
+              value={messageForm.message}
               onChange={(e) => {
-                setForm({
-                  ...form,
+                setMessageForm({
+                  ...messageForm,
                   message: e.target.value
                 });
               }}
               name="message"
+              type="text"
               id="message"
               className="p-3 border outline-none rounded"
             ></textarea>
@@ -143,7 +152,7 @@ function Contacts({ form, setForm, handleSubmit }) {
           <button
             className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[14px]"
             type="submit"
-            onClick={handleSubmit}
+            onClick={handleMessageSubmit}
             // onClick={(e) => {
             //   e.preventDefault();
             //   console.log(form);

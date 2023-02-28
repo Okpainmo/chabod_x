@@ -4,8 +4,15 @@ import me from '../../../assets/images/me.jpg';
 
 function Accounts() {
   return (
-    <section className="admin-accounts w-full pb-20 mt-12">
-      <h3 className="montserrat text-xl font-bold text--colors_secondary mt-6">Admin accounts</h3>
+    <section className="admin-accounts w-full pb-20 xsm:pt-8">
+      {/* <h3 className="montserrat text-xl font-bold text--colors_secondary mt-6">Admin accounts</h3> */}
+      <div className="section-top flex justify-between items-center mt-6">
+        <h3 className="montserrat text-xl font-bold text--colors_secondary">Admin accounts</h3>
+        <div className="subscriber-count montserrat text-md font-bold text--colors_secondary">
+          {/* ({messagesDetails.length}) */}
+          (15)
+        </div>
+      </div>
       <section className="admin-accounts mt-6 flex flex-col gap-y-10 md:w-full md:justify-between md:flex-wrap md:flex-row text-center">
         <div className="admin-card bg--glass2 py-6 px-4 shadow text-[12px] md:w-[48%]">
           <div className="admin-photo-wrapper">

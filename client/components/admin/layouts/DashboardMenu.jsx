@@ -10,11 +10,11 @@ function DashboardMenu() {
       <Link href="/admin">
         <li>Home</li>
       </Link>
-      <Link href="/admin/accounts">
-        <li>Accounts</li>
-      </Link>
       <Link href="/admin/blogger">
         <li>Blogger</li>
+      </Link>
+      <Link href="/admin/accounts">
+        <li>Accounts</li>
       </Link>
       <Link href="/admin/newsletter">
         <li>Newsletter</li>
