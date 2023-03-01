@@ -1,7 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import projectBanner from '../../assets/images/bg.jpg';
+import deecoBanner from '../../assets/images/deeco-main-banner.png';
+import reactifyBanner from '../../assets/images/reactify-main-banner.png';
+import chabodXBanner from '../../assets/images/chabod-x-main-banner.png';
+import chabodBanner from '../../assets/images/chabod-main-banner.png';
+import Emoji from '../Emoji';
 
 function Projects() {
   return (
@@ -11,61 +15,68 @@ function Projects() {
     >
       <h1 className="text-2xl sm:text-4xl section-title poppins font-bold">Projects </h1>
       <h3 className="text-base sm:text-xl text--colors_secondary my-4 sm:my-6 lg:mb-12 poppins">
-        A selection of some of my top projects
+        A selection of some of my projects
       </h3>
       <div className="flex flex-col gap-y-12 lg:gap-y-20 mb-16">
         <div className="project-card shade-1 lg:no-shade px-3 pt-6 pb-10 lg:flex lg:flex-row lg:pb-6 lg:w-[80%] lg:mx-auto lg:px-6 rounded-lg">
           <div className="project-banner-wrapper lg:w-[45%]">
             <Image
               className="w-full shadow-lg"
-              src={projectBanner}
-              width={150}
+              src={deecoBanner}
+              // width={150}
               // height={150}
               alt="seller-photo"
             />
           </div>
           <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
             <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
-              Project Name
+              Deeco.
             </div>
             <div className="project-brief mb-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
-              quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
-              velit earum tenetur qui sint voluptatum vel maiores...
+              Deeco is a blockchain e-commerce platform. It powers e-commerce experiences but with
+              cryptocurrency based payments. It is a solo-project that I built as my hackathon
+              submission for the Polygon Africa web3/blockchain bootcamp of 2022. Deeco was among
+              the winning-projects in my category of the hackathon.
             </div>
-            <Link href="/project-story">
-              <span className="underline">Read full project story</span>
+            <Link href="/project-story" className="text-[12px] hidden">
+              <span className="underline text--colors_primary">Read full project story</span>
             </Link>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                NextJs/ReactJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                TailwindCSS
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                React contect API
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Firebase + FirestoreDB
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Solidity
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Hardhat/EthersJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Mumbai(polygon) testnet.
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Alchemy
+              </div>
+              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                Fake store API
+              </div>
+              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                Metamask
               </div>
             </div>
             <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
               <a
-                className="github bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
-                href="gh.com"
+                className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
+                href="https://github.com/Okpainmo/deeco"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +90,8 @@ function Projects() {
                 </svg>
               </a>
               <a
-                className="live-site bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
-                href="gh.com"
+                className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
+                href="https://deeco.vercel.app/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,54 +112,53 @@ function Projects() {
           <div className="project-banner-wrapper lg:w-[45%]">
             <Image
               className="w-full shadow-lg"
-              src={projectBanner}
-              width={150}
+              src={chabodXBanner}
+              // width={150}
               // height={150}
               alt="seller-photo"
             />
           </div>
           <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
             <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
-              Project Name
+              Chabod_x.
             </div>
             <div className="project-brief mb-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
-              quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
-              velit earum tenetur qui sint voluptatum vel maiores...
+              Chabod_x is a fullstack blog-folio web-app. It is a project that I hope to make
+              open-source once completed. The project is a packed solution to help developers manage
+              their professional portfolio. It consist of a portfolio website, a custom blog, a blog
+              manager, a newsletter manager, and other admin functionalities. Chabod_x is what
+              powers this(my) portfolio website that you're currently on.
             </div>
-            <Link href="/project-story">
-              <span className="underline">Read full project story</span>
+            <Link href="/project-story" className="text-[12px] hidden">
+              <span className="underline text--colors_primary">Read full project story</span>
             </Link>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                NextJs/ReactJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                NodeJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                ExpressJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                MongoDB
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Mongoose ODM
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                tailwind CSS
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                React Context API
               </div>
             </div>
             <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
               <a
-                className="github bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
-                href="gh.com"
+                className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
+                href="https://github.com/Okpainmo/chabod_x"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +172,8 @@ function Projects() {
                 </svg>
               </a>
               <a
-                className="live-site bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
-                href="gh.com"
+                className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
+                href="https://chabod-x.vercel.app/admin/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,54 +194,40 @@ function Projects() {
           <div className="project-banner-wrapper lg:w-[45%]">
             <Image
               className="w-full shadow-lg"
-              src={projectBanner}
-              width={150}
+              src={reactifyBanner}
+              // width={150}
               // height={150}
               alt="seller-photo"
             />
           </div>
           <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
             <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
-              Project Name
+              Reactify.
             </div>
             <div className="project-brief mb-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
-              quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
-              velit earum tenetur qui sint voluptatum vel maiores...
+              Reactify is an opensource project that is primarily built to help people learn ReactJs
+              and NextJs. It's an amazing opensource project for contributors(writer, developers,
+              and technical writers) to make impact primarily in the ReactJs Ecosystem. Reactify is
+              the first open-source project I have actively maintained.
             </div>
-            <Link href="/project-story">
-              <span className="underline">Read full project story</span>
+            <Link href="/project-story" className="text-[12px] hidden">
+              <span className="underline text--colors_primary">Read full project story</span>
             </Link>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                NextJs/ReactJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                TailwindCSS
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Contentful CMS
               </div>
             </div>
             <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
               <a
-                className="github bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
-                href="gh.com"
+                className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
+                href="https://github.com/Okpainmo/Reactify"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -245,8 +241,8 @@ function Projects() {
                 </svg>
               </a>
               <a
-                className="live-site bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
-                href="gh.com"
+                className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
+                href="https://reactify-blog.vercel.app/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,54 +263,60 @@ function Projects() {
           <div className="project-banner-wrapper lg:w-[45%]">
             <Image
               className="w-full shadow-lg"
-              src={projectBanner}
-              width={150}
+              src={chabodBanner}
+              // width={150}
               // height={150}
               alt="seller-photo"
             />
           </div>
           <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
             <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
-              Project Name
+              The Chabod project.
             </div>
             <div className="project-brief mb-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum culpa,
-              quibusdam, delectus asperiores minus debitis ratione ad eaque autem quis consequatur
-              velit earum tenetur qui sint voluptatum vel maiores...
+              A project I fondly call "my single product start-up"{' '}
+              <Emoji symbol="😊😊😊" label="three blushing faces" />. Even though it is the first
+              major project of my web development career, I remain very proud of it. It remains one
+              project that greatly revealed my determination and ingenuity. I{' '}
+              <strong>singlehandedly</strong> built the product(a portfolio website template), built
+              the sales website, and did everything in between like writing a user-documentation,
+              terms of use, setting up sales, and etcetera. I only got some help with marketing
+              later on.
+              <br /> The project currently has{' '}
+              <a
+                href="https://www.producthunt.com/products/chabod"
+                target="_blank"
+                rel="noreferrer"
+                className="text--colors_primary underline"
+              >
+                37 upvotes on product hunt.
+              </a>
             </div>
-            <Link href="/project-story">
-              <span className="underline">Read full project story</span>
+            <Link href="/project-story" className="text-[12px] hidden">
+              <span className="underline text--colors_primary">Read full project story</span>
             </Link>
             <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                HTML
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                CSS/SCSS
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Bootstrap 5
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Vanilla Javascript
               </div>
+
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Firebase
+                Gulp.Js
               </div>
             </div>
             <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
               <a
-                className="github bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
-                href="gh.com"
+                className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
+                href="https://github.com/Okpainmo/get_chabod"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -328,8 +330,8 @@ function Projects() {
                 </svg>
               </a>
               <a
-                className="live-site bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
-                href="gh.com"
+                className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
+                href="https://getchabod.netlify.app/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -348,8 +350,8 @@ function Projects() {
         </div>
       </div>
       <a
-        href="gh.com"
-        className="text--colors_primary py-3 btn--outline text-sm px-4 xsm:px-10 hidden"
+        href="https://github.com/Okpainmo"
+        className="text--colors_primary py-3 btn--outline text-sm px-4 xsm:px-10"
       >
         Checkout more projects on github
       </a>

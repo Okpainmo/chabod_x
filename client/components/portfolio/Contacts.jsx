@@ -41,10 +41,10 @@ function Contacts() {
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
             </svg>
             <div className="phone-numbers flex flex-col gap-2">
-              <a className="text--colors_primary underline" href="okpainmoandrew@gmail.com">
+              <a className="text--colors_primary underline" href="mailto:okpainmoandrew@gmail.com">
                 okpainmoandrew@gmail.com
               </a>
-              <a className="hidden" href="mawiyoandrews@gmail.com">
+              <a className="hidden" href="mailto:mawiyoandrews@gmail.com">
                 mawiyoandrews@gmail.com
               </a>
             </div>
@@ -52,7 +52,9 @@ function Contacts() {
           <div className="socials flex w-[100px] gap-6 mt-4 mx-auto justify-center">
             <a
               className="twitter bg--secondary w-[30px] h-[30px] rounded-full p-[0.5rem]"
-              href="gh.com"
+              href="https://twitter.com/AJ_Okpainmo"
+              target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +69,9 @@ function Contacts() {
             </a>
             <a
               className="linked-in bg--secondary w-[30px] h-[30px] rounded-full p-[0.55rem]"
-              href="gh.com"
+              href="https://www.linkedin.com/in/okpainmo-andrew/"
+              target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

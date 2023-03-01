@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 function Blog() {
   return (
@@ -14,96 +14,120 @@ function Blog() {
       <div className="blog-posts text-[12px] sm:text-[14px]">
         <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            Reflecting on my best dev year yet. (Dev Retro 2022)
           </div>
           <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
+            2022 was an awesome year for me - I truly won't be wrong to call it my best dev year
+            ever. I welcome you to this interesting read where I'll take you through how awesome
+            2022 was for me.
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <Link className="underline text--colors_primary" href="/blog">
-              Read post
-            </Link>
-          </div>
-        </div>
-        <div className="post text-center mb-16">
-          <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
-          </div>
-          <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-          </div>
-          <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <a
+              href="https://zhacks.hashnode.dev/reflecting-on-my-best-dev-year-yet-dev-retro-2022"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text--colors_primary"
+            >
               Read post
             </a>
           </div>
         </div>
         <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            Finish Celebrating Hacktoberfest 2022 by contributing to Reactify.
           </div>
           <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
+            Reactify is primarily a project(an opensource blog) that is meant to help people learn
+            some web development technologies that I have come to love. Like the name of the project
+            already states, the first of such amazing web development technologies, is ReactJs.
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <a
+              href="https://zhacks.hashnode.dev/finish-celebrating-hacktoberfest-2022-by-contributing-to-reactify"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text--colors_primary"
+            >
               Read post
             </a>
           </div>
         </div>
         <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            7 Bug Handling And Problem-solving Tips For Developers.
           </div>
           <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
+            Learning to fix bugs and handle problems, are special arts that every developer/software
+            engineer must master. While some might argue that bug handling and problem-solving
+            cannot be mastered, I beg to differ somehow.
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <a
+              href="https://zhacks.hashnode.dev/7-bug-handling-and-problem-solving-tips-for-developers"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text--colors_primary"
+            >
               Read post
             </a>
           </div>
         </div>
         <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            How to build a complete/full-stack blog with NextJS(React JS) and contentful CMS.
           </div>
           <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
+            In this two-article series, I will walk you through the process of building a
+            complete/full-stack blog with one of such CMS platforms – Contentful. This is the first
+            Article in the series.
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <a
+              href="https://zhacks.hashnode.dev/how-to-build-a-completefull-stack-blog-with-nextjsreact-js-and-contentful-cms"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text--colors_primary"
+            >
               Read post
             </a>
           </div>
         </div>
-        <div className="post text-center mb-12">
+        <div className="post text-center mb-16">
           <div className="post-title text-[17px] font-bold poppins">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            How to build a complete/full-stack blog with NextJS(React JS) and contentful CMS(Part
+            2).{' '}
           </div>
           <div className="post-brief mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-            nostrum nulla expedita. Iste quidem dolor at fuga sunt.
+            CMS platforms are powerful options that help front-end developers build amazing products
+            and services without even a single line of backend code. This article is the second part
+            of a 2-part build-article series that involves building an amazing blog using one of
+            such awesome CMS platforms called Contentful .
           </div>
           <div className="post-link mt-2 font-bold poppins">
-            <a className="underline text--colors_primary" href="g.com">
+            <a
+              href="https://zhacks.hashnode.dev/how-to-build-a-complete-blog-with-nextjsreact-js-and-contentful-cmspart-2"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text--colors_primary"
+            >
               Read post
             </a>
           </div>
         </div>
-        <div className="blog-link">
+
+        <a
+          href="https://zhacks.hashnode.dev"
+          target="_blank"
+          rel="noreferrer"
+          className="blog-link"
+        >
           <button
             type="button"
             className="text-white connect btn--regular px-6 py-3 w-full sm:mt-12 xsm:w-[400px] text-[14px]"
           >
             Explore my blog
           </button>
-        </div>
+        </a>
       </div>
     </section>
   );
