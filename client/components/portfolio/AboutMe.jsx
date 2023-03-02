@@ -8,27 +8,28 @@ function AboutMe() {
     >
       <h1 className="section-title text-2xl sm:text-4xl poppins poppins font-bold">About Me</h1>
       <div className="about-text text--colors_secondary mt-8 text-[14px] sm:text-[14px] leading-[22px]">
-        <p className="mb-4">
+        <p className="mb-8">
           Even though I can't fully recall how it all started, I still do remember that I had a
-          great passion and obscession for programming and start-ups. <br /> Today, I am a fullstack
-          Javascript developer(ReactJs/NextJs + NodeJs), a blockchain(solidity) developer, and a
-          technical writer.
+          great passion and obscession for programming and start-ups. <br /> I am currently a
+          fullstack Javascript developer(ReactJs/NextJs + NodeJs), a blockchain(solidity) developer,
+          and a technical writer.
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           I am a highly gifted and intelligent Nigerian, who is passionate about building
           ground-breaking inventions with code. I command very high fluency in English which is one
           among the three languages that I speak. <br /> I am passionate about learning new
-          technologies, as well as my continuous growth as a programmer.
+          technologies, as well as my continuous growth as a programmer, hence I remain an avid
+          learner.
         </p>
-        <p className="mb-4">I love God a lot, and people do mean a lot to me as well.</p>
-        <p className="mb-4">
-          I have about 2 years of experience in web development(including my formative/learning
-          period) - most of which I spent doing front-end web development. Most of my growth as a
-          programmer, have been through personal(self learning) efforts. <br /> I have a strong eye
-          for design, and I am very passionate about building pixel-perfect user-interfaces as a
-          front-end web developer.
+        <p className="mb-8">I love God a lot, and people do mean a lot to me as well.</p>
+        <p className="mb-8">
+          I have over 2 years of experience in web development(including my formative/learning
+          period) - most of which I spent doing front-end web development. <br /> I guess it will be
+          important to add that most of my growth as a programmer, have been through personal(self
+          learning) efforts. <br /> I have a strong eye for design, and I am very passionate about
+          building pixel-perfect user-interfaces as a front-end web developer.
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           I've had the opportunity to work on some development teams. Having served as team lead
           before, I have been able to develop some necessary soft-skills to help me cope and adapt
           to team work - whether as team-lead or not. <br />
@@ -86,21 +87,18 @@ function AboutMe() {
             Solidity
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
-            Hardhat
-          </div>
-          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
-            EthersJs
+            Hardhat + EthersJs
           </div>
         </div>
-        <p className="mb-4">
+        <p className="mb-8">
           I am currently open and available for front-end development, back-end development,
           full-stack development, blockchain development, or any technical writing roles.
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           I will definitely be a strong addition to any team for any of the above mentioned roles. I
           will be very glad to contribute my experience towards the success of the team.
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           Talking experience, 2022 had a lot to speak for me. In 2022, I participated in the Polygon
           Africa web3/blockchain bootcamp, and my project(Deeco) - was fourth on the list of winners
           in my category of the bootcamp hackathon. <br /> Deeco is a blockchain e-commerce
@@ -119,7 +117,7 @@ function AboutMe() {
             read the hackathon winners announcement article here.
           </a>
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           Being a very gifted writer, 2022 was also the year in which I won sensationally as a
           technical writer in a technical writing contest organized by{' '}
           <a
@@ -142,11 +140,11 @@ function AboutMe() {
           </a>
           .
         </p>
-        <p className="mb-4">
-          Right now, I am open to any roles, but I am most interested in taking up a role on which I
-          will work as a fullstack-blockchain developer - buiding sleek user-interfaces, building
-          APIs and other back-end functionalities, while also building the smart-contract(s) to
-          power decentralized applications of any scale.
+        <p className="mb-8">
+          Right now, I am open to any of the afore-mentioned roles, but I am most interested in
+          taking up a role on which I will work as a fullstack-blockchain developer - buiding sleek
+          user-interfaces, building APIs and other back-end functionalities, while also building the
+          smart-contract(s) to power decentralized applications of any scale.
         </p>
       </div>
       {/* <button

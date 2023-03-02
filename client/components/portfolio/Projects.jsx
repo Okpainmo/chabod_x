@@ -36,7 +36,8 @@ function Projects() {
               Deeco is a blockchain e-commerce platform. It powers e-commerce experiences but with
               cryptocurrency based payments. It is a solo-project that I built as my hackathon
               submission for the Polygon Africa web3/blockchain bootcamp of 2022. Deeco was among
-              the winning-projects in my category of the hackathon.
+              the winning-projects in my category of the hackathon. To fully explore the live
+              project, please use a PC.
             </div>
             <Link href="/project-story" className="text-[12px] hidden">
               <span className="underline text--colors_primary">Read full project story</span>
@@ -137,6 +138,9 @@ function Projects() {
                 NextJs/ReactJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                Tailwind CSS
+              </div>
+              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 NodeJs
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
@@ -147,9 +151,6 @@ function Projects() {
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 Mongoose ODM
-              </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                tailwind CSS
               </div>
               <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
                 React Context API
@@ -205,10 +206,11 @@ function Projects() {
               Reactify.
             </div>
             <div className="project-brief mb-3">
-              Reactify is an opensource project that is primarily built to help people learn ReactJs
-              and NextJs. It's an amazing opensource project for contributors(writer, developers,
-              and technical writers) to make impact primarily in the ReactJs Ecosystem. Reactify is
-              the first open-source project I have actively maintained.
+              Reactify is an opensource blog project that is primarily built to help people learn
+              ReactJs and NextJs. It's an amazing opensource project for contributors(writer,
+              developers, and technical writers) to make impact primarily in the ReactJs Ecosystem.
+              Reactify is the first open-source project I have actively maintained. I built it
+              during the Hacktoberfest 2022 season as my participation in Hacktoberfest 2022.
             </div>
             <Link href="/project-story" className="text-[12px] hidden">
               <span className="underline text--colors_primary">Read full project story</span>
@@ -274,14 +276,14 @@ function Projects() {
               The Chabod project.
             </div>
             <div className="project-brief mb-3">
-              A project I fondly call "my single product start-up"{' '}
+              A project I call "my single product start-up"{' '}
               <Emoji symbol="😊😊😊" label="three blushing faces" />. Even though it is the first
               major project of my web development career, I remain very proud of it. It remains one
               project that greatly revealed my determination and ingenuity. I{' '}
               <strong>singlehandedly</strong> built the product(a portfolio website template), built
               the sales website, and did everything in between like writing a user-documentation,
-              terms of use, setting up sales, and etcetera. I only got some help with marketing
-              later on.
+              the terms of use document, setting up sales, and even more. I only got some help with
+              marketing later on.
               <br /> The project currently has{' '}
               <a
                 href="https://www.producthunt.com/products/chabod"
