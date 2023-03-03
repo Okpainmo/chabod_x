@@ -20,14 +20,16 @@ app.use(cors());
 // routers
 const messagesRouter = require('./routes/messages');
 const newsletterRouter = require('./routes/newsletter');
+const adminsRouter = require('./routes/admins');
 
 // use-routes
 app.use('/api/v1/messages', messagesRouter);
 app.use('/api/v1/newsletter', newsletterRouter);
+app.use('/api/v1/admins', adminsRouter);
 
 // home-route
 app.get('/api', (req, res) => {
-  res.status(200).send('app is live');
+  res.status(200).send('app is live - welcome to chabod_x');
 });
 
 // serve

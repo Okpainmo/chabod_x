@@ -8,7 +8,7 @@ const messageSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      require: [true, 'Please provide your email'],
+      required: [true, 'Please provide your email'],
       match: [
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         ,
