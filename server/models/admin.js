@@ -2,17 +2,21 @@ const mongoose = require('mongoose');
 
 const adminSchema = new mongoose.Schema(
   {
-    name: {
+    adminName: {
       type: String,
       required: [true, 'please provide your name'],
     },
-    about: {
+    adminBio: {
       type: String,
-      required: [true, 'please type in your message'],
+      required: [true, 'please provide a brief bio of yourself'],
     },
-    niche: {
+    adminNiches: {
       type: String,
-      required: [true, 'please type in your message'],
+      required: [true, 'please type in niche(s)'],
+    },
+    adminPassword: {
+      type: String,
+      required: [true, 'please add a password'],
     },
   },
   { timestamps: true }
