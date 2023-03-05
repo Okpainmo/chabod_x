@@ -2,27 +2,45 @@ const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema(
   {
-    name: {
+    postTags: {
+      type: String,
+      required: [true, 'please add tags that are related to this post'],
+    },
+    postTitle: {
       type: String,
       required: [true, 'please provide your name'],
     },
-    email: {
+    postSlug: {
       type: String,
-      required: [true, 'Please provide your email'],
-      match: [
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-        ,
-        'Please provide a valid email address',
-      ],
-      //   unique: true,
+      required: [true, 'please provide your name'],
     },
-    message: {
+    postAuthor: {
       type: String,
-      required: [true, 'please type in your message'],
+      required: [true, 'please provide your name'],
     },
-    read: {
-      type: Boolean,
-      default: false,
+    postDate: {
+      type: String,
+      required: [true, 'please provide your name'],
+    },
+    postCategory: {
+      type: String,
+      required: [true, 'please provide your name'],
+    },
+    postBrief: {
+      type: String,
+      required: [true, 'please provide your name'],
+    },
+    createdBy: {
+      type: String,
+      required: [true, 'please provide your name'],
+    },
+    reactions: {
+      type: Number,
+      default: 0,
+    },
+    postBody: {
+      type: Array,
+      default: [],
     },
   },
   { timestamps: true }

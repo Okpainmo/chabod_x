@@ -20,12 +20,14 @@ app.use(cors());
 // routers
 const messagesRouter = require('./routes/messages');
 const newsletterRouter = require('./routes/newsletter');
-const adminsRouter = require('./routes/admins');
+const adminRouter = require('./routes/admins');
+const postRouter = require('./routes/posts');
 
 // use-routes
 app.use('/api/v1/messages', messagesRouter);
 app.use('/api/v1/newsletter', newsletterRouter);
-app.use('/api/v1/admins', adminsRouter);
+app.use('/api/v1/admins', adminRouter);
+app.use('/api/v1/posts', postRouter);
 
 // home-route
 app.get('/api', (req, res) => {
