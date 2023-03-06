@@ -8,7 +8,9 @@ const sendMessage = async (req, res) => {
 
 const getAllMessages = async (req, res) => {
   const allMessages = await messageModel.find({});
-  res.status(200).json({ count: allMessages.length, allMessages });
+  res
+    .status(200)
+    .json({ requestStatus: 'success', count: allMessages.length, allMessages });
 };
 
 module.exports = {

@@ -8,7 +8,9 @@ const createAdmin = async (req, res) => {
 
 const getAllAdmins = async (req, res) => {
   const allAdmins = await adminModel.find({});
-  res.status(200).json({ count: allAdmins.length, allAdmins });
+  res
+    .status(200)
+    .json({ requestStatus: 'success', count: allAdmins.length, allAdmins });
 };
 
 module.exports = {

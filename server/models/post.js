@@ -8,31 +8,31 @@ const postSchema = new mongoose.Schema(
     },
     postTitle: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add the title of the post'],
     },
     postSlug: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please provide a slug for the post'],
     },
     postAuthor: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add an author name for the post'],
     },
     postDate: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add the date of the post'],
     },
     postCategory: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add a category for the post'],
     },
     postBrief: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add a brief summary of the post'],
     },
     createdBy: {
       type: String,
-      required: [true, 'please provide your name'],
+      required: [true, 'please add your name(initial name only)'],
     },
     reactions: {
       type: Number,

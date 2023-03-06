@@ -8,7 +8,11 @@ const createSubscriber = async (req, res) => {
 
 const getAllSubscribers = async (req, res) => {
   const allSubscribers = await subscriberModel.find({});
-  res.status(200).json({ count: allSubscribers.length, allSubscribers });
+  res.status(200).json({
+    requestStatus: 'success',
+    count: allSubscribers.length,
+    allSubscribers,
+  });
 };
 
 module.exports = {
