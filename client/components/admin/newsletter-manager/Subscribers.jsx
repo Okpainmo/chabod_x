@@ -14,12 +14,12 @@ function Subscribers({ newsletterData }) {
       </div>
       <div className="subscribers flex flex-col gap-y-6 mt-4 text-[12px] md:w-full md:justify-between md:flex-wrap md:flex-row">
         {subscribersDetails.map((each) => {
-          const { id, email, createdAt } = each;
+          const { _id, email, createdAt } = each;
 
           return (
             <div
               className="subscriber-card bg--glass2 shadow px-3 py-3 rounded md:w-[48%]"
-              key={id}
+              key={_id}
             >
               <div className="sender-info text--colors_primary mb-2">{email}</div>
               <div className="date-added text--colors_secondary text-[10px]">

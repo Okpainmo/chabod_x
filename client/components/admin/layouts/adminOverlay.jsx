@@ -3,13 +3,14 @@ import React from 'react';
 function AdminOverlay({ children, mainOverlayHide, showMainOverlay }) {
   return (
     <main
-      className={`admin-overlay text--colors_default bg-glass-2 fixed top-0 left-0 right-0 min-h-screen ${
+      className={`hidden-scroll-bar admin-overlay text--colors_default bg-glass-2 fixed top-0 left-0 right-0 overflow-auto h-screen ${
         showMainOverlay ? 'block' : 'hidden'
       } px-3 bg--glass2 z-50 text-[12px] pt-10 xsm:px-[20px]`}
     >
-      <div className="sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px]">
+      {/* <div className="w-full overflow-y-auto h-screen"> */}
+      <div className="sm:w-[80%] sm:mx-auto md:w-[70%] lg:w-[700px] relative">
         <div
-          className="close-btn fixed top-4 right-4 border w-[40px] h-[40px] rounded-full p-[10.5px] shadow-lg"
+          className="close-btn fixed top-3 right-3 xsm:top-4 xsm:right-4 border w-[40px] h-[40px] rounded-full p-[10.5px] shadow-lg"
           onClick={mainOverlayHide}
         >
           <svg
@@ -25,6 +26,7 @@ function AdminOverlay({ children, mainOverlayHide, showMainOverlay }) {
         </div>
         {children}
       </div>
+      {/* </div> */}
     </main>
   );
 }

@@ -14,9 +14,9 @@ function AllMessages({ mainOverlayShow, messagesData }) {
       </div>
       <div className="messages flex flex-col gap-y-8 mt-4 md:w-full md:justify-between md:flex-wrap md:flex-row">
         {messagesDetails.map((each) => {
-          const { name, createdAt, email, message, id } = each;
+          const { name, createdAt, email, message, _id } = each;
           return (
-            <div className="message-card bg--glass2 shadow px-3 py-3 rounded md:w-[48%]" key={id}>
+            <div className="message-card bg--glass2 shadow px-3 py-3 rounded md:w-[48%]" key={_id}>
               <div className="message-info text-[12px]">
                 <div className="message mb-2  min-h-[100px]">{message}</div>
                 <div className="sender-info text--colors_primary">

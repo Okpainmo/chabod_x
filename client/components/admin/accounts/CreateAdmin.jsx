@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { AccountsContext } from '../../../context/admin/AccountsContext';
 
 function CreateAccount() {
-  const [form, setForm] = useState({
-    adminName: '',
-    adminBio: '',
-    adminNiches: ''
-  });
+  const { handleTest, form, setForm, createAdmin } = useContext(AccountsContext);
 
   return (
     <section className="create-newsletter mt-12 text-[12px] w-full">
       <h3 className="montserrat text-xl font-bold text--colors_secondary text-center">Reply</h3>
-      <div className="text-center mt-2 montserrat font-bold text--colors_primary">
+      <div
+        className="text-center mt-2 montserrat font-bold text--colors_primary"
+        onClick={handleTest}
+      >
         Create a new admin
       </div>
       <form
@@ -40,9 +40,11 @@ function CreateAccount() {
           <label className="nunito-sans mb-2" htmlFor="adminBio">
             Admin bio
           </label>
-          <input
+          <textarea
             required
             type="text"
+            cols={20}
+            rows={5}
             value={form.adminBio}
             onChange={(e) => {
               setForm({
@@ -53,7 +55,7 @@ function CreateAccount() {
             name="adminBio"
             id="adminBio"
             className="p-3 border outline-none rounded"
-          />
+          ></textarea>
         </div>
         <div className="input-group flex flex-col mt-6">
           <label className="nunito-sans mb-2" htmlFor="adminNiches">
@@ -99,11 +101,11 @@ function CreateAccount() {
         <button
           className="nunito-sans mt-10 btn--regular px-4 py-3 text-white w-full rounded text-[14px]"
           type="submit"
-          // onClick={handleSubmit}
-          onClick={(e) => {
-            e.preventDefault();
-            console.log(form);
-          }}
+          onClick={createAdmin}
+          // onClick={(e) => {
+          //   e.preventDefault();
+          //   console.log(form);
+          // }}
         >
           Create admin
         </button>
