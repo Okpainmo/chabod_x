@@ -33,7 +33,7 @@ const updatePost = async (req, res) => {
   //   throw new NotFoundError(`No job with id ${jobId}`);
   // }
 
-  res.status(201).json({ post });
+  res.status(201).json({ requestStatus: 'success', post });
 };
 
 module.exports = {
