@@ -51,13 +51,29 @@ google font-customization
   }
 }
 
+/* ========================
+scroll-bar customization
+===========================
+*/
+
 @layer utilities {
-  /* 
+  .hidden-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hidden-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 
 =========================================================
 colour configuration using native tailwind css colours
 =========================================================
 */
-
+@layer utilities {
   /** customized texts **/
 
   .text--colors_default {
@@ -215,4 +231,8 @@ regular styles
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+}
+
+.z-60 {
+  z-index: 60;
 }
