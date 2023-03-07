@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import MainAppLayout from '../../components/admin/layouts/MainAppLayout';
 // import MainAdminLayout from '../../components/admin/layouts/MainAdminLayout';
 import Navbar from '../../components/admin/layouts/Navbar';
@@ -9,6 +10,7 @@ import FloatingAddButton from '../../components/admin/layouts/FloatingAddButton'
 import AdminOverlay from '../../components/admin/layouts/adminOverlay';
 import CreatePost from '../../components/admin/blogger/CreatePost';
 import DashboardMenu from '../../components/admin/layouts/DashboardMenu';
+import AdminPreloader from '../../components/admin/AdminPreloader';
 // import MobileMenu from '../../components/admin/layouts/DashboardTop';
 
 function BloggerCenter() {
@@ -23,6 +25,8 @@ function BloggerCenter() {
   };
   return (
     <>
+      <Toaster />
+      <AdminPreloader />
       <AdminOverlay showMainOverlay={showMainOverlay} mainOverlayHide={mainOverlayHide}>
         <CreatePost />
       </AdminOverlay>

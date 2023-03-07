@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import MainAppLayout from '../../components/admin/layouts/MainAppLayout';
 // import MainAdminLayout from '../../components/admin/layouts/MainAdminLayout';
 import Navbar from '../../components/admin/layouts/Navbar';
@@ -21,6 +22,7 @@ function AdminHome() {
   };
   return (
     <>
+      <Toaster />
       <AdminOverlay showMainOverlay={showMainOverlay} mainOverlayHide={mainOverlayHide}>
         <MessageReply />
       </AdminOverlay>

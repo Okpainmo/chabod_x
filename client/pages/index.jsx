@@ -10,13 +10,13 @@ import Contacts from '../components/portfolio/Contacts';
 import Blog from '../components/portfolio/Blog';
 // import { PortfolioContext } from '../context/PortfolioContext';
 
-import Preloader from '../components/portfolio/layouts/Preloader';
+import PortfolioPreloader from '../components/portfolio/PortfolioPreloader';
 
 function Home() {
   return (
     <>
       <Toaster />
-      <Preloader />
+      <PortfolioPreloader />
       <Navbar />
       <MainAppLayout>
         <main className="min-h-screen relative">
