@@ -21,8 +21,24 @@ const getAllPosts = async (req, res) => {
     .json({ requestStatus: 'success', count: allPosts.length, allPosts });
 };
 
+const updatePost = async (req, res) => {
+  const postId = req.params.id;
+
+  const post = await postModel.findByIdAndUpdate({ _id: postId }, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  // if (!post) {
+  //   throw new NotFoundError(`No job with id ${jobId}`);
+  // }
+
+  res.status(201).json({ post });
+};
+
 module.exports = {
   createPost,
   getAllPosts,
   getPost,
+  updatePost,
 };
