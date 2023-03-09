@@ -32,13 +32,17 @@ const postSchema = new mongoose.Schema(
     },
     createdBy: {
       type: String,
-      // required: [true, 'please add your name(initial name only)'],
+      required: [true, 'please add your name(initial name only)'],
     },
     reactions: {
       type: Number,
       default: 0,
     },
     postBody: {
+      type: Array,
+      default: [],
+    },
+    postTOC: {
       type: Array,
       default: [],
     },
