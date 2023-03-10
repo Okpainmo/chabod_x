@@ -42,10 +42,6 @@ const postSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
-    postTOC: {
-      type: Array,
-      default: [],
-    },
   },
   { timestamps: true }
 );
