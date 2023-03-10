@@ -22,12 +22,14 @@ const messagesRouter = require('./routes/messages');
 const newsletterRouter = require('./routes/newsletter');
 const adminRouter = require('./routes/admins');
 const postRouter = require('./routes/posts');
+const categoryRouter = require('./routes/categories');
 
 // use-routes
 app.use('/api/v1/messages', messagesRouter);
 app.use('/api/v1/newsletter', newsletterRouter);
 app.use('/api/v1/admins', adminRouter);
 app.use('/api/v1/posts', postRouter);
+app.use('/api/v1/categories', categoryRouter);
 
 // home-route
 app.get('/api', (req, res) => {
