@@ -5,6 +5,7 @@ const categorySchema = new mongoose.Schema(
     categoryName: {
       type: String,
       required: [true, 'please provide a value as "category name"'],
+      unique: true,
     },
   },
   { timestamps: true }
