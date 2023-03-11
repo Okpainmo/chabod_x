@@ -8,14 +8,17 @@ general project resets
 =========================
 */
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-image: url(../assets/images/bg.jpg);
+  /*background-image: url(../assets/images/bg.jpg);*/
   background-size: cover;
   background-attachment: fixed;
-  scroll-behavior: smooth;
+  @apply bg-purple-100 dark:bg-purple-300;
 }
 
 a {
