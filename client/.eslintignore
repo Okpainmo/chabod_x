@@ -14,7 +14,6 @@
 
 # production
 /build
-build
 
 # misc
 .DS_Store
@@ -32,5 +31,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-#pnpm 
-pnpm-lock.yaml
+
+# trash folder
+/trash
