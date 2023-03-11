@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Toaster } from 'react-hot-toast';
 import MainAppLayout from '../../components/admin/layouts/MainAppLayout';
 // import MainAdminLayout from '../../components/admin/layouts/MainAdminLayout';
@@ -12,29 +12,22 @@ import AdminOverlay from '../../components/admin/layouts/adminOverlay';
 import CreateAdmin from '../../components/admin/accounts/CreateAdmin';
 import DashboardMenu from '../../components/admin/layouts/DashboardMenu';
 import AdminPreloader from '../../components/admin/AdminPreloader';
+import StickyNav from '../../components/admin/layouts/StickyNav';
 // import MobileMenu from '../../components/admin/layouts/DashboardTop';
 
 function AdminHome({ adminsData }) {
-  const [showMainOverlay, setShowMainOverlay] = useState(false);
-
-  const mainOverlayHide = () => {
-    setShowMainOverlay(false);
-  };
-
-  const mainOverlayShow = () => {
-    setShowMainOverlay(true);
-  };
   return (
     <>
       <Toaster />
       <AdminPreloader />
-      <AdminOverlay showMainOverlay={showMainOverlay} mainOverlayHide={mainOverlayHide}>
+      <StickyNav />
+      <AdminOverlay>
         <CreateAdmin />
       </AdminOverlay>
       <Navbar />
-      <FloatingAddButton mainOverlayShow={mainOverlayShow} />
+      <FloatingAddButton />
       <MainAppLayout>
-        <main className="lg:flex lg:flex-row lg:justify-between lg:gap-x-10">
+        <main className="relative lg:flex lg:flex-row lg:justify-between lg:gap-x-10">
           <DashboardMenu />
           <section className="min-h-screen px-3 xsm:px-[20px] sm:px-16 lg:w-[80%]">
             <AdminAccount adminsData={adminsData} />

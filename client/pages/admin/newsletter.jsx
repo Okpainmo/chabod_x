@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MainAppLayout from '../../components/admin/layouts/MainAppLayout';
 import Navbar from '../../components/admin/layouts/Navbar';
 import NewsLetterManager from '../../components/admin/newsletter-manager';
@@ -6,27 +6,19 @@ import FloatingNewsLetterButton from '../../components/admin/layouts/FloatingNew
 import AdminOverlay from '../../components/admin/layouts/adminOverlay';
 import CreateNewsletter from '../../components/admin/newsletter-manager/CreateNewsletter';
 import DashboardMenu from '../../components/admin/layouts/DashboardMenu';
+import StickyNav from '../../components/admin/layouts/StickyNav';
 // import BlogHome from '../../components/blog/BlogHome';
 // import MessagesCenter from '../../components/admin/message-center';
 
 function NewsletterCenter({ newsletterData }) {
-  const [showMainOverlay, setShowMainOverlay] = useState(false);
-
-  const mainOverlayHide = () => {
-    setShowMainOverlay(false);
-  };
-
-  const mainOverlayShow = () => {
-    setShowMainOverlay(true);
-  };
-
   return (
     <>
-      <AdminOverlay showMainOverlay={showMainOverlay} mainOverlayHide={mainOverlayHide}>
+      <StickyNav />
+      <AdminOverlay>
         <CreateNewsletter />
       </AdminOverlay>
       <Navbar />
-      <FloatingNewsLetterButton mainOverlayShow={mainOverlayShow} />
+      <FloatingNewsLetterButton />
       <MainAppLayout>
         <main className="lg:flex lg:flex-row lg:justify-between lg:gap-x-10">
           <DashboardMenu />
