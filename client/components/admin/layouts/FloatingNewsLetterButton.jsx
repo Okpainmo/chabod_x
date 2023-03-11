@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalAdminContext } from '../../../context/admin/GlobalAdminContext';
 
-function FloatingNewsLetterButton({ mainOverlayShow }) {
+function FloatingNewsLetterButton() {
+  const { mainOverlayShow } = useContext(GlobalAdminContext);
+
   return (
     <div
       className="send-btn-wrapper fixed z-40 bottom-[20px] md:bottom-[30px] right-[20px] md:right-[30px]"

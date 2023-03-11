@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PortfolioContext } from '../context/PortfolioContext';
+import { PortfolioContext } from '../context/portfolio/PortfolioContext';
 
 function NewsletterSection() {
   const { newsletterForm, setNewsletterForm, handleNewsletterSubmit } =

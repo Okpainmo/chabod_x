@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { GlobalAdminContext } from '../../../context/admin/GlobalAdminContext';
 
 function MessageReply() {
+  const { showReplyMailForm } = useContext(GlobalAdminContext);
+
   const [form, setForm] = useState({
     replyType: '',
     subject: '',
@@ -8,7 +11,11 @@ function MessageReply() {
   });
 
   return (
-    <section className="create-newsletter mt-12 text-[12px] w-full">
+    <section
+      className={`reply-mail-form mt-12 text-[12px] w-full ${
+        showReplyMailForm ? 'block' : 'hidden'
+      }`}
+    >
       <h3 className="montserrat text-xl font-bold text--colors_secondary text-center">Reply</h3>
       <div className="text-center mt-2">
         replying to <span className="underline text--colors_primary">senderemail@gmail.com</span>{' '}

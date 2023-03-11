@@ -2,7 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Emoji from '../Emoji';
 
-function BlogHome() {
+function BlogHome({ postsData }) {
+  // console.log(postsData);
+
   return (
     <div className="">
       <section className="blog_bg--primary px-3 pt-28 sm:pt-24 md:pt-32 xsm:px-[20px]">
@@ -27,91 +29,25 @@ function BlogHome() {
             <h3 className="uppercase font-bold text--colors_secondary mb-4 text-lg montserrat">
               Recent Posts
             </h3>
-            <div>
-              <div className="post mt-4 md:mb-16">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <Link className="underline text--colors_primary" href="/blog/post">
-                    Read post
-                  </Link>
-                </div>
-              </div>
-              <div className="post mt-12 md:mb-16">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <a className="underline text--colors_primary" href="g.com">
-                    Read post
-                  </a>
-                </div>
-              </div>
-              <div className="post mt-12 md:mb-16">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <a className="underline text--colors_primary" href="g.com">
-                    Read post
-                  </a>
-                </div>
-              </div>
-              <div className="post mt-12 md:mb-16">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <a className="underline text--colors_primary" href="g.com">
-                    Read post
-                  </a>
-                </div>
-              </div>
-              <div className="post mt-12 md:mb-16">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <a className="underline text--colors_primary" href="g.com">
-                    Read post
-                  </a>
-                </div>
-              </div>
-              <div className="post mt-12">
-                <div className="post-title text-[17px] font-bold poppins">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </div>
-                <div className="post-brief mt-2">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                  nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-                </div>
-                <div className="post-link mt-2 font-bold poppins">
-                  <a className="underline text--colors_primary" href="g.com">
-                    Read post
-                  </a>
-                </div>
-              </div>
+            <div className="posts-wrapper">
+              {postsData.allPosts.map((each) => {
+                const { _id: id, postTitle, postBrief, postSlug } = each;
+
+                return (
+                  <div className="post mt-12 md:mb-16" key={id}>
+                    <div className="post-title text-[17px] font-bold poppins">{postTitle}</div>
+                    <div className="post-brief mt-2">{postBrief}</div>
+                    <div className="post-link mt-2 font-bold poppins">
+                      <Link
+                        className="underline text--colors_primary"
+                        href={`/blog/posts/${postSlug}`}
+                      >
+                        Read post
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </section>
           <section className="categories-wrapper mt-8 text-[12px] sm:text-[14px] border-t-2 py-8 lg:border-t-0 lg:w-[30%] font-bold montserrat">

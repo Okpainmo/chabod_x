@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalAdminContext } from '../../../context/admin/GlobalAdminContext';
 
-function FloatingAddButton({ mainOverlayShow }) {
+function FloatingAddButton() {
+  const { mainOverlayShow } = useContext(GlobalAdminContext);
   return (
     <div
       className="add-post-btn-wrapper fixed z-40 bottom-[20px] md:bottom-[30px] right-[20px] md:right-[30px]"
       onClick={mainOverlayShow}
+      // onClick={() => {
+      //   alert('hello world');
+      // }}
     >
       <button
         type="button"
@@ -19,7 +24,7 @@ function FloatingAddButton({ mainOverlayShow }) {
           viewBox="0 0 16 16"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
           />
         </svg>

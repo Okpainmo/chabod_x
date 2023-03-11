@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalAdminContext } from '../../../context/admin/GlobalAdminContext';
 
-function AllMessages({ mainOverlayShow, messagesData }) {
+function AllMessages({ messagesData }) {
+  const { mainOverlayShow } = useContext(GlobalAdminContext);
+
   console.log(messagesData.allMessages);
   const messagesDetails = messagesData.allMessages;
 
@@ -29,7 +32,10 @@ function AllMessages({ mainOverlayShow, messagesData }) {
                   <button
                     type="button"
                     className="msg-btn btn--outline px-4 py-2 mt-4 rounded"
-                    onClick={mainOverlayShow}
+                    onClick={() => {
+                      mainOverlayShow();
+                      // replyMailFormShow();
+                    }}
                   >
                     reply
                   </button>

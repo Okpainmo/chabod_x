@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalAdminContext } from '../../../context/admin/GlobalAdminContext';
 
-function AdminOverlay({ children, mainOverlayHide, showMainOverlay }) {
+function AdminOverlay({ children }) {
+  const { mainOverlayHide, showMainOverlay } = useContext(GlobalAdminContext);
+
   return (
     <main
       className={`hidden-scroll-bar admin-overlay text--colors_default bg-glass-2 fixed top-0 left-0 right-0 overflow-auto h-screen ${

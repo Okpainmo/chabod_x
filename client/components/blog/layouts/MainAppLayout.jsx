@@ -3,7 +3,7 @@ import Footer from './Footer';
 
 function MainAppLayout({ children }) {
   return (
-    <main className="bg--glass text--colors_default nunito-sans">
+    <main className="bg--glass text--colors_default nunito-sans mt-16">
       {/* <MobileNavBar /> */}
       {/* <Navbar /> */}
       {children}

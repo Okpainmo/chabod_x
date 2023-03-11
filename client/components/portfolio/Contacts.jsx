@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PortfolioContext } from '../../context/PortfolioContext';
+import { PortfolioContext } from '../../context/portfolio/PortfolioContext';
 
 function Contacts() {
   const { messageForm, setMessageForm, handleMessageSubmit } = useContext(PortfolioContext);
@@ -24,8 +24,8 @@ function Contacts() {
             <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
           </svg>
           <div className="phone-numbers flex flex-col gap-2 mt-6">
-            <span>+234 81 8976 4364</span>
             <span>+234 90 5373 9194</span>
+            <span>+234 81 8976 4364</span>
           </div>
         </div>
         <div className="email mt-16 md:mt-0">

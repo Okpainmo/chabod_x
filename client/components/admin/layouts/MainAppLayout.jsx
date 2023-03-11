@@ -5,7 +5,7 @@ import DashboardTop from './DashboardTop';
 
 function MainAppLayout({ children }) {
   return (
-    <main className="main-app-layout bg--glass text--colors_default nunito-sans relative lg:px-[10%]">
+    <main className="main-app-layout bg--glass text--colors_default nunito-sans lg:px-[10%]">
       {/* <AdminOverlay /> */}
       <DashboardTop />
       {/* <Navbar /> */}

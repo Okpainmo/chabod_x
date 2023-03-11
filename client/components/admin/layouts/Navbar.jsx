@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 const DynamicThemeSwitcher = dynamic(() => import('../../ThemeSwitcher'), {
   ssr: false
@@ -17,11 +18,15 @@ function Navbar() {
           className="nav-links hidden lg:flex gap-16 items-center text--secondary mr-16"
           style={{ fontSize: '12px' }}
         >
-          <li className="poppins">Portfolio</li>
+          <Link href="/">
+            <li className="poppins">Portfolio</li>
+          </Link>
+          <Link href="/blog">
+            <li className="poppins">Blog</li>
+          </Link>
           {/* <li className="poppins">About Me</li>
           <li className="poppins">Projects</li>
           <li className="poppins">Contact</li> */}
-          <li className="poppins">Blog</li>
         </ul>
 
         <section
