@@ -25,8 +25,9 @@ function BloggerContextProvider({ children }) {
     createdBy: adminName
   });
 
-  const [postBodyForm, setPostBodyForm] = useState({
+  const [postSectionsForm, setPostSectionsForm] = useState({
     sectionTitle: '',
+    sectionSlug: '',
     sectionBody: ''
   });
 
@@ -43,9 +44,10 @@ function BloggerContextProvider({ children }) {
     });
   };
 
-  const resetPostBodyForm = () => {
-    setPostBodyForm({
+  const resetPostSectionsForm = () => {
+    setPostSectionsForm({
       sectionTitle: '',
+      sectionSlug: '',
       sectionBody: ''
     });
   };
@@ -65,6 +67,7 @@ function BloggerContextProvider({ children }) {
       toast.error('Please proceed to add post sections - post intro has already been added', {
         duration: 3000
       });
+      return;
     }
 
     const {
@@ -177,16 +180,16 @@ function BloggerContextProvider({ children }) {
       return;
     }
 
-    const { sectionTitle, sectionBody } = postBodyForm;
+    const { sectionTitle, sectionSlug, sectionBody } = postSectionsForm;
 
-    if (sectionTitle === '' || sectionBody === '') {
+    if (sectionTitle === '' || sectionSlug === '' || sectionBody === '') {
       toast.error('Please fill out all form fields', {
         duration: 3000
       });
       return;
     }
 
-    if (sectionTitle !== '' && sectionBody !== '') {
+    if ((sectionTitle !== '' && sectionSlug === '', sectionBody !== '')) {
       PostSectionResponsePreloaderShow();
     }
 
@@ -197,7 +200,7 @@ function BloggerContextProvider({ children }) {
       // first: get post
       const post = await axios.get(`https://chabod-x.onrender.com/api/v1/posts/${id}`);
 
-      console.log(postBodyForm);
+      console.log(postSectionsForm);
 
       console.log(post);
 
@@ -209,7 +212,7 @@ function BloggerContextProvider({ children }) {
       const currentPostBodySections = currentPost.data.post.postBody;
       console.log(currentPostBodySections);
 
-      const newSection = postBodyForm;
+      const newSection = postSectionsForm;
 
       // updated post
       const newPost = await axios.patch(`https://chabod-x.onrender.com/api/v1/posts/${id}`, {
@@ -229,8 +232,9 @@ function BloggerContextProvider({ children }) {
           }
         );
 
-        setPostBodyForm({
+        setPostSectionsForm({
           sectionTitle: '',
+          sectionSlug: '',
           sectionBody: ''
         });
       }
@@ -259,7 +263,7 @@ function BloggerContextProvider({ children }) {
   const finishPost = () => {
     resetPostIntroForm();
 
-    resetPostBodyForm();
+    resetPostSectionsForm();
 
     setPostId('no post id');
 
@@ -277,8 +281,8 @@ function BloggerContextProvider({ children }) {
         showPostSectionResponsePreloader,
         postIntroForm,
         setPostIntroForm,
-        postBodyForm,
-        setPostBodyForm,
+        postSectionsForm,
+        setPostSectionsForm,
         createPostIntro,
         addPostSection,
         finishPost
