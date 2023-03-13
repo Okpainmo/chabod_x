@@ -13,7 +13,7 @@ function AllPost({ postsData }) {
 
       <div className="all-posts flex flex-col gap-y-8 mt-4">
         {postsData.allPosts.map((each) => {
-          const { _id: id, postTitle, postAuthor, createdBy } = each;
+          const { _id: id, postTitle, postAuthor, createdBy, reactions } = each;
 
           return (
             <div className="post-card bg--glass2 shadow px-3 py-3 rounded" key={id}>
@@ -40,7 +40,9 @@ function AllPost({ postsData }) {
                     </button>
                   </section>
                 </div>
-                <div className="reaction-count w-1/12 flex justify-center items-center">xx</div>
+                <div className="reaction-count w-1/12 flex justify-center items-center">
+                  {reactions}
+                </div>
               </div>
             </div>
           );
