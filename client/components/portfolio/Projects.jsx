@@ -198,11 +198,11 @@ function Projects() {
               Chabod_x.
             </div>
             <div className="project-brief mb-3">
-              Chabod_x is a fullstack blog-folio web-app. It is a project that I hope to make
-              open-source once completed. The project is a packed solution to help developers manage
-              their professional portfolio. It consist of a portfolio website, a custom blog, a blog
-              manager, a newsletter manager, and other admin functionalities. Chabod_x is what
-              powers this(my) portfolio website that you're currently on.
+              Chabod_x is a massive fullstack blog-folio web-app. It is a project that I might make
+              open(open source) once completed. The project is a packed solution to help techies
+              manage their professional portfolio. It consist of a portfolio website, a custom blog,
+              a blog manager, a newsletter manager, and other admin functionalities. Chabod_x is
+              what powers this(my) portfolio website that you're currently on.
             </div>
             <Link href="/project-story" className="text-[12px] hidden">
               <span className="underline text--colors_primary">Read full project story</span>

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Emoji from '../Emoji';
 
-function BlogHome({ postsData }) {
+function BlogHome({ postsData, categoriesData }) {
   // console.log(postsData);
 
   return (
@@ -54,37 +54,18 @@ function BlogHome({ postsData }) {
             <h3 className="uppercase font-bold text--colors_secondary mb-2 text-lg">
               All categories
             </h3>
-            <div className="categories w-full flex flex-wrap gap-x-3 md:w-[90%]">
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
-              <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
-                firebase
-              </div>
+            <div className="categories w-full flex flex-wrap gap-x-3 md:w-[90%] lg:w-[400px]">
+              {categoriesData.allCategories.map((each) => {
+                const { _id: id, categoryName } = each;
+                return (
+                  <div
+                    className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded"
+                    key={id}
+                  >
+                    {categoryName}
+                  </div>
+                );
+              })}
             </div>
           </section>
         </div>
@@ -92,91 +73,25 @@ function BlogHome({ postsData }) {
           <h3 className="uppercase font-bold text--colors_secondary mb-4 text-lg montserrat">
             Most loved posts
           </h3>
-          <div>
-            <div className="post mt-4 md:mb-16">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <Link className="underline text--colors_primary" href="/blog/post">
-                  Read post
-                </Link>
-              </div>
-            </div>
-            <div className="post mt-12 md:mb-16">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <a className="underline text--colors_primary" href="g.com">
-                  Read post
-                </a>
-              </div>
-            </div>
-            <div className="post mt-12 md:mb-16">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <a className="underline text--colors_primary" href="g.com">
-                  Read post
-                </a>
-              </div>
-            </div>
-            <div className="post mt-12 md:mb-16">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <a className="underline text--colors_primary" href="g.com">
-                  Read post
-                </a>
-              </div>
-            </div>
-            <div className="post mt-12 md:mb-16">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <a className="underline text--colors_primary" href="g.com">
-                  Read post
-                </a>
-              </div>
-            </div>
-            <div className="post mt-12">
-              <div className="post-title text-[17px] font-bold poppins">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="post-brief mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quod sequi
-                nostrum nulla expedita. Iste quidem dolor at fuga sunt.
-              </div>
-              <div className="post-link mt-2 font-bold poppins">
-                <a className="underline text--colors_primary" href="g.com">
-                  Read post
-                </a>
-              </div>
-            </div>
+          <div className="posts-wrapper">
+            {postsData.allPosts.map((each) => {
+              const { _id: id, postTitle, postBrief, postSlug } = each;
+
+              return (
+                <div className="post mt-12 md:mb-16" key={id}>
+                  <div className="post-title text-[17px] font-bold poppins">{postTitle}</div>
+                  <div className="post-brief mt-2">{postBrief}</div>
+                  <div className="post-link mt-2 font-bold poppins">
+                    <Link
+                      className="underline text--colors_primary"
+                      href={`/blog/posts/${postSlug}`}
+                    >
+                      Read post
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </section>
