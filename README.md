@@ -1,10 +1,12 @@
 # Chabod_x - still in progress
 
-Chabod_x is a fullstack blog-folio web-app. It is a new and more powerful/advanced version of the [Chabod project](https://github.com/Okpainmo/get_chabod). It's a sleeker and super amazing NextJs/ReactJs + NodeJs Version. I am building it as a brand new blog-folio (portfolio web-app + custom blog + more) project for every interested person - beginning with myself.
+Chabod_x is a fullstack blog-folio web-app. It is a new and more powerful/advanced version of the [Chabod project](https://github.com/Okpainmo/get_chabod). It's a sleeker and super amazing NextJs/ReactJs + NodeJs Version.
+
+I am building it as a brand new blog-folio (portfolio web-app + custom blog + more) project for every interested person - beginning with myself.
 
 The project back-end is built with NodeJs using ExpressJs. Database is MongoDB, and ODM is Mongoose.
 
-> 📢📢📢 Best news is - **It's free to use - but for PERSONAL PORTFOLIOS only. NOT FOR USE IN ANY COMMERCIAL PROJECT**.
+> 📢📢📢 Best news is that - **It's FREE FOR USE BY ANYONE, AND ITS OPENSOURCE TOO**.
 
 This project will help you own a portfolio website which also contains a super-amazing custom blog - **"FOR FREEEEEE!!!"**
 
