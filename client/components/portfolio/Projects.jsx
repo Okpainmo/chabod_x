@@ -110,76 +110,78 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="project-card shade-1 lg:no-shade px-3 pt-6 pb-10 lg:flex lg:flex-row lg:pb-6 lg:w-[80%] lg:mx-auto lg:px-6 rounded-lg">
-          <div className="project-banner-wrapper lg:w-[45%]">
-            <Image
-              className="w-full shadow-lg"
-              src={tiloBanner}
-              // width={150}
-              // height={150}
-              alt="project-banner"
-            />
-          </div>
-          <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
-            <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
-              Tilo.
+        <div className="hidden">
+          <div className="project-card shade-1 lg:no-shade px-3 pt-6 pb-10 lg:flex lg:flex-row lg:pb-6 lg:w-[80%] lg:mx-auto lg:px-6 rounded-lg">
+            <div className="project-banner-wrapper lg:w-[45%]">
+              <Image
+                className="w-full shadow-lg"
+                src={tiloBanner}
+                // width={150}
+                // height={150}
+                alt="project-banner"
+              />
             </div>
-            <div className="project-brief mb-3">
-              Tilo is a beautiful side-project I am working on. It's a crypto based project to aid
-              cryptocurrency marketers and other cryto enthusiasts in watching and trading the
-              market with ease, thanks to a user experience that is streamlined towards simplicity
-              and efficiency. It provides a base for traders to watch the market(top 50 coins), keep
-              an eye on trending coins, and more. For now, only most of the front-end aspect is
-              ready. In the next iteration of the project, I hope to complete it into a full stack
-              project with a coin/token swap included - hence powering it up with blockchain/web3
-              capabilities.
-            </div>
-            <Link href="/project-story" className="text-[12px] hidden">
-              <span className="underline text--colors_primary">Read full project story</span>
-            </Link>
-            <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                NextJs/ReactJs
+            <div className="project-details lg:text-left lg:pl-12 lg:w-[55%] mb-3 mt-4 lg:mt-0 text-[12px] sm:text-[14px]">
+              <div className="project-name poppins text-xl sm:text-2xl font-bold mb-2 lg:mb-3">
+                Tilo.
               </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                TailwindCSS
+              <div className="project-brief mb-3">
+                Tilo is a beautiful side-project I am working on. It's a crypto based project to aid
+                cryptocurrency marketers and other cryto enthusiasts in watching and trading the
+                market with ease, thanks to a user experience that is streamlined towards simplicity
+                and efficiency. It provides a base for traders to watch the market(top 50 coins),
+                keep an eye on trending coins, and more. For now, only most of the front-end aspect
+                is ready. In the next iteration of the project, I hope to complete it into a full
+                stack project with a coin/token swap included - hence powering it up with
+                blockchain/web3 capabilities.
               </div>
-              <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
-                Crypto APIs (thanks to coingecko)
+              <Link href="/project-story" className="text-[12px] hidden">
+                <span className="underline text--colors_primary">Read full project story</span>
+              </Link>
+              <div className="tags flex flex-wrap justify-center lg:justify-start gap-x-3 mt-3">
+                <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                  NextJs/ReactJs
+                </div>
+                <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                  TailwindCSS
+                </div>
+                <div className="tag skill-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px]">
+                  Crypto APIs (thanks to coingecko)
+                </div>
               </div>
-            </div>
-            <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
-              <a
-                className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
-                href="https://github.com/Okpainmo/tilo"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-github"
-                  viewBox="0 0 16 16"
+              <div className="links flex w-[100px] gap-6 mt-8 mx-auto justify-center lg:justify-start lg:mx-0">
+                <a
+                  className="github-link bg--secondary w-[40px] h-[40px] rounded-full p-[0.6rem]"
+                  href="https://github.com/Okpainmo/tilo"
                 >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
-              </a>
-              <a
-                className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
-                href="https://tilo-project.vercel.app/coins-watchlist"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="currentColor"
-                  className="bi bi-link-45deg"
-                  viewBox="0 0 16 16"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    className="bi bi-github"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+                <a
+                  className="live-site-link bg--secondary rounded-full w-[40px] h-[40px] p-[0.6rem]"
+                  href="https://tilo-project.vercel.app/coins-watchlist"
                 >
-                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-                </svg>
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    className="bi bi-link-45deg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -198,11 +200,11 @@ function Projects() {
               Chabod_x.
             </div>
             <div className="project-brief mb-3">
-              Chabod_x is a massive fullstack blog-folio web-app. It is a project that I might make
-              open(open source) once completed. The project is a packed solution to help techies
-              manage their professional portfolio. It consist of a portfolio website, a custom blog,
-              a blog manager, a newsletter manager, and other admin functionalities. Chabod_x is
-              what powers this(my) portfolio website that you're currently on.
+              Chabod_x is a massive fullstack blog-folio web-app. It is an opensource project that I
+              am building to give professions the portfolio management tool that I never got until
+              now. The project is a packed solution. It consist of a portfolio website, a custom
+              blog, a blog manager, a newsletter manager, and other admin functionalities. Chabod_x
+              is what powers this(my) portfolio website that you're currently on.
             </div>
             <Link href="/project-story" className="text-[12px] hidden">
               <span className="underline text--colors_primary">Read full project story</span>
@@ -281,7 +283,7 @@ function Projects() {
             </div>
             <div className="project-brief mb-3">
               Reactify is an opensource blog project that is primarily built to help people learn
-              ReactJs and NextJs. It's an amazing opensource project for contributors(writer,
+              ReactJs and NextJs. It's an amazing opensource project for contributors(writers,
               developers, and technical writers) to make impact primarily in the ReactJs Ecosystem.
               Reactify is the first open-source project I have actively maintained. I built it
               during the Hacktoberfest 2022 season as my participation in Hacktoberfest 2022.
