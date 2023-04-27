@@ -219,6 +219,10 @@ function Mentorship() {
                 any of the menus that you can find on this website.
               </p>
               <p className="my-4">
+                * Considering the value and everything that this course has to offer, all the
+                above-listed course fees are - actually giveaways.
+              </p>
+              <p className="my-4">
                 <span className="font-bold">Cheers!!!</span> - see you in the course.
               </p>
             </div>
