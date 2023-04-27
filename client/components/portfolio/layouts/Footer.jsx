@@ -30,7 +30,7 @@ function Footer() {
             <Link href="/#blog-section" className="text--colors_primary">
               <li>Read my blog</li>
             </Link>
-            <Link href="/#top" className="text--colors_primary">
+            <Link href="#top" className="text--colors_primary">
               <li>Back to top</li>
             </Link>
           </ul>
