@@ -1,9 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 
 function MobileNavbar() {
   return (
     <nav className="bg--glass2 mobile-nav flex fixed bottom-0 left-0 right-0 pt-[6px] pb-[3px]  sm:py-3 z-50 xsm:px-8 sm:px-12 md:px-20 lg:hidden px-3 justify-between text--colors_default nunito-sans">
-      <a href="#top">
+      <Link href="/#top">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +18,8 @@ function MobileNavbar() {
           </svg>
           <span className="poppins text-[10px]">Home</span>
         </div>
-      </a>
-      <a href="#about-section">
+      </Link>
+      <Link href="/#about-section">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +34,8 @@ function MobileNavbar() {
           </svg>
           <span className="poppins text-[10px]">About Me</span>
         </div>
-      </a>
-      <a href="#projects-section">
+      </Link>
+      <Link href="/#projects-section">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +49,8 @@ function MobileNavbar() {
           </svg>
           <span className="poppins text-[10px]">Projects</span>
         </div>
-      </a>
-      <a href="#contacts-section">
+      </Link>
+      <Link href="/#contacts-section">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +64,8 @@ function MobileNavbar() {
           </svg>
           <span className="poppins text-[10px]">Contacts</span>
         </div>
-      </a>
-      <a href="#blog-section">
+      </Link>
+      <Link href="/#blog-section">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +80,7 @@ function MobileNavbar() {
           </svg>
           <span className="poppins text-[10px]">Blog</span>
         </div>
-      </a>
+      </Link>
     </nav>
   );
 }

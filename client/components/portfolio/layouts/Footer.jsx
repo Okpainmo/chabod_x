@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import NewsletterSection from '../../NewsletterSection';
 // import Link from 'next/link';
 
@@ -10,28 +11,28 @@ function Footer() {
       <section className="flex gap-6 lg:w-1/2 montserrat">
         <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
-            <a href="#about-section" className="text--colors_primary">
+            <Link href="/#about-section" className="text--colors_primary">
               <li>About me</li>
-            </a>
-            <a href="#about-section" className="text--colors_primary">
+            </Link>
+            <Link href="/#about-section" className="text--colors_primary">
               <li>My tech stack</li>
-            </a>
-            <a href="#projects-section" className="text--colors_primary">
+            </Link>
+            <Link href="/#projects-section" className="text--colors_primary">
               <li>My projects</li>
-            </a>
+            </Link>
           </ul>
         </div>
         <div className="min-h-[150px] w-1/3">
           <ul className="flex flex-col gap-y-3 text-[12px]">
-            <a href="#contacts-section" className="text--colors_primary">
+            <Link href="/#contacts-section" className="text--colors_primary">
               <li>Contact me</li>
-            </a>
-            <a href="#blog-section" className="text--colors_primary">
+            </Link>
+            <Link href="/#blog-section" className="text--colors_primary">
               <li>Read my blog</li>
-            </a>
-            <a href="#top" className="text--colors_primary">
+            </Link>
+            <Link href="/#top" className="text--colors_primary">
               <li>Back to top</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </section>

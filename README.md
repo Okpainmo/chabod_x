@@ -54,6 +54,7 @@ Cheers!!! 💗.
 4. tailwind CSS
 5. React Context API
 6. Animations/transitions with Framer motion - coming up soon...
+   And more...
 
 ## Progress
 
