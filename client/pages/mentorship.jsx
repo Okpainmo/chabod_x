@@ -10,7 +10,7 @@ function Mentorship() {
     <>
       <Navbar />
       <MainAppLayout>
-        <main className="min-h-screen pt-12 sm:pt-20 mb-20">
+        <main className="min-h-screen pt-12 sm:pt-20 mb-20 text-[12px] sm:text-[14px]">
           <div className="w-full">
             <Image className="mx-auto" alt="mentorship flier" src={mentorshipFlier} width="100%" />
           </div>
