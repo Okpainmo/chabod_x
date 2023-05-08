@@ -21,6 +21,13 @@ function Mentorship() {
             <Image className="mx-auto" alt="mentorship flier" src={mentorshipFlier} width="100%" />
           </div>
           <section className="px-3 w-full sm:mt-20 sm:px-12 md:px-0 md:w-[70%] md:mx-auto lg:w-[60%] xl:w-[50%]">
+            <p className="my-4 text-red-500 text-bold poppins">
+              I slashed the original course fee by over 50%. Now you can get into the course for
+              only 25,000 Naira (for Nigerian residents), and $200 for (Non-Nigerian residents) -{' '}
+              <a href="#course-fees-section" className="text-blue-500 capitalize text-[14px]">
+                Learn more
+              </a>
+            </p>
             <h1 className="capitalize mt-6 mb-4 underline poppins font-bold text-2xl sm:text-3xl">
               The ultimate full-stack and blockchain development bundle.
             </h1>
@@ -182,12 +189,52 @@ function Mentorship() {
                 guaranteed benefit, as it also fully depends on participants' commitment and
                 success.
               </p>
-              <p className="my-4">
+              <p className="my-4" id="course-fees-section">
                 6. Other awesome benefits <span className="uppercase">might</span> still come along.
               </p>
             </div>
             <div className="pt-4">
               <h3 className="poppins text-xl sm:text-2xl my-3 font-bold">6. Course fee.</h3>
+              <h5 className="poppins text-xl sm:text-lg my-3 font-bold">A. Payment plan A.</h5>
+              <p className="my-4">
+                I slashed the original course fee by over 50%. Now you can get into the course for
+                only 25 thousand Naira (for Nigerian residents), and $200 for (Non-Nigerian
+                residents) – TO BE PAID ONCE.
+              </p>
+              <p className="my-4">
+                The slash in course price comes with some caveats/terms to be carefully noted –
+                please take note of them before going with this option. The original price of the
+                course(N70K | $500) still stands – for only the 10 first people who can afford it –
+                SLOTS ARE ALREADY BEING TAKEN.
+                <br />
+                For the original/full price(N70K | $500), you’ll get all the course benefits as
+                listed above.
+              </p>
+              <p>
+                But at this discounted price(N25K | $200), you’ll get only 3 of the above listed
+                benefits:
+                <ul className="flex flex-col gap-3 my-3">
+                  <li>
+                    1. Full access to the course – including all tasks and assignments, but ONE ON
+                    ONE INTERACTIONS WITH ME ENDS ONCE CLASS IS OVER.
+                  </li>
+                  <li>
+                    2. You'll get to learn technical writing for FREE – same as in the full payment
+                    category explained above.
+                  </li>
+                  <li>3. You’ll receive a certificate of course completion.</li>
+                </ul>
+                Remember that the FULL PAY OPTION(Payment Plan B) IS ONLY AVAILABLE FOR 10 PEOPLE –
+                SO HURRY IF YOU CAN AFFORD IT - BEFORE ALL SLOTS GET TAKEN. I am taking only 10
+                students for the full pay category, because of my schedule and time – just so I can
+                give them my best – especially time-wise.
+                <p className="my-4">I hope this huge slash helps out well.</p>
+              </p>
+              <h5 className="poppins text-xl sm:text-lg my-3 font-bold">A. Payment Plan B.</h5>
+              <p className="my-4">
+                This payment plan is the standard payment plan for the course. With this plan,
+                you'll get all the above listed course benefits.
+              </p>
               <p className="my-4">
                 1. 70,000 Naira for participants in Nigeria <br /> (This includes Nigerians and
                 non-Nigerians - as long as you reside in Nigeria). <br /> <br />
