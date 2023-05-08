@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
 import MainAppLayout from '../components/portfolio/layouts/MainAppLayout';
 import MobileNavbar from '../components/portfolio/layouts/MobileNavbar';
@@ -8,6 +9,11 @@ import mentorshipFlier from '../assets/images/mentorship-flier.jpg';
 function Mentorship() {
   return (
     <>
+      <Head>
+        <title>
+          Join my 4 months fullstack and blockchain (software) development mentorship course.
+        </title>
+      </Head>
       <Navbar />
       <MainAppLayout>
         <main className="min-h-screen pt-12 sm:pt-20 mb-20 text-[12px] sm:text-[14px]">

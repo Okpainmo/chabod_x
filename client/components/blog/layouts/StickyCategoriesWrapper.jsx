@@ -12,6 +12,9 @@ function StickyCategoriesWrapper({ categoriesData }) {
     >
       <h3 className="uppercase font-bold text--colors_secondary mb-2 text-lg">All categories</h3>
       <div className="categories w-full flex flex-wrap gap-x-3 md:w-[90%]">
+        {/* <div className="category-tag bg--primary px-3 py-2 text--colors_white mt-4 text-[10px] rounded">
+          all categories
+        </div> */}
         {categoriesData.allCategories.map((each) => {
           const { _id: id, categoryName } = each;
           return (

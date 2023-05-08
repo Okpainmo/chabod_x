@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import MainAppLayout from '../components/portfolio/layouts/MainAppLayout';
 import MobileNavbar from '../components/portfolio/layouts/MobileNavbar';
@@ -15,6 +16,9 @@ import PortfolioPreloader from '../components/portfolio/PortfolioPreloader';
 function Home() {
   return (
     <>
+      <Head>
+        <title>A.J Okpainmo</title>
+      </Head>
       <Toaster />
       <PortfolioPreloader />
       <Navbar />

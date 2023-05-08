@@ -14,7 +14,7 @@ function CreateCategory() {
       }`}
     >
       <h3 className="montserrat text-xl font-bold text--colors_secondary text-center">
-        Make a post
+        Create a new category
       </h3>
       <form className="post-body-form xsm:px-[30px] pt-6 pb-10 border-b text-[12px] md:text-[14px]">
         <div className="input-group flex flex-col mt-6">
