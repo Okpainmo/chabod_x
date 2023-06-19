@@ -10,8 +10,8 @@ function TopScreen() {
         <Image
           className="rounded-full mx-auto"
           src={me}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           alt="seller-photo"
         />
       </div>
