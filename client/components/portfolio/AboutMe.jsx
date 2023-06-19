@@ -9,32 +9,21 @@ function AboutMe() {
       <h1 className="section-title text-2xl sm:text-4xl poppins poppins font-bold">About Me</h1>
       <div className="about-text text--colors_secondary mt-8 text-[14px] sm:text-[14px] leading-[22px]">
         <p className="mb-8">
-          Even though I can't fully recall how it all started, I still do remember that I had a
-          great passion and obscession for programming and start-ups. I recall being greatly
-          challenged by the successes of Jaylen Bledsoe and Benjamin Pasternak - two teenage startup
-          sensations that inspired my tech dream so much back then.
+          I am a highly gifted and intelligent Nigerian, who is passionate about building
+          ground-breaking inventions with code.
         </p>
         <p className="mb-8">
           I am currently a fullstack Javascript/Typescript developer(ReactJs/NextJs + NodeJs), a
-          blockchain(Solidity) developer, and a technical writer.
+          blockchain(Solidity) developer, and a technical writer. <br /> I am also currently getting
+          a hand on devOps and cloud-computing.
         </p>
         <p className="mb-8">
           In recent times, I am becoming highly interested in tech enterpreneurship and tech
-          mentorship. I am currently building my first startup - Jobjo.
-        </p>
-        <p className="mb-8">
-          I am a highly gifted and intelligent Nigerian, who is passionate about building
-          ground-breaking inventions with code. I command very high fluency in English which is one
-          among the three languages that I speak. I am passionate about learning new technologies,
-          as well as my continuous growth as a programmer, hence I remain an avid learner.
+          mentorship. I am currently building my first startup - Jobjo, along side{' '}
+          <span className="underline">Zoe collectives</span> - mother company to a fleet of
+          sub-startups.
         </p>
         <p className="mb-8">I love God a lot, and people do mean a lot to me as well.</p>
-
-        <p className="mb-8">
-          I've had the opportunity to work on some development teams. Having served as team lead
-          before, I have been able to develop some necessary soft-skills to help me cope and adapt
-          to team work - whether as team-lead or not.
-        </p>
         <p className="mb-8">
           Below, <i className="underline">are some key technologies</i> that I am familiar with:
         </p>
