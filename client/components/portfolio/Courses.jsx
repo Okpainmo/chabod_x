@@ -238,7 +238,7 @@ function Courses() {
         target="_blank"
         rel="noreferrer"
       >
-        Checkout more of my tutorials/courses on Youtube.
+        See more on Youtube.
       </a>
     </section>
   );
