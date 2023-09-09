@@ -48,7 +48,7 @@ contacts section logic
       }
 
       const postRequest = await axios.post(
-        'https://chabod-x.onrender.com/api/v1/messages/send-message',
+        'https://my-portfolio-server-rwww.onrender.com/api/v1/messages/send-message',
         {
           name,
           email,
@@ -128,7 +128,7 @@ newsletter section logic
       }
 
       const postRequest = await axios.post(
-        'https://chabod-x.onrender.com/api/v1/newsletter/create-subscriber',
+        'https://my-portfolio-server-rwww.onrender.com/api/v1/newsletter/create-subscriber',
         {
           email
         }

@@ -23,6 +23,18 @@ function AboutMe() {
           <span className="underline">Zoe collectives</span> - mother company to a fleet of
           sub-startups.
         </p>
+        <p className="mb-8">
+          I publish tech content on{' '}
+          <a
+            href="https://www.youtube.com/channel/UC0CKKi10MJUAKWKJ8nZe9Kw"
+            target="_blank"
+            rel="noreferrer"
+            className="text--colors_primary underline"
+          >
+            my youtube channel
+          </a>{' '}
+          where I share my expertise through deep tutorials to help developers become better.
+        </p>
         <p className="mb-8">I love God a lot, and people do mean a lot to me as well.</p>
         <p className="mb-8">
           Below, <i className="underline">are some key technologies</i> that I am familiar with:
@@ -41,7 +53,7 @@ function AboutMe() {
             Typescript
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
-            Jquery
+            Zod
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             SCSS
@@ -84,6 +96,9 @@ function AboutMe() {
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             Hardhat + EthersJs
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Jquery
           </div>
         </div>
         <p className="mb-8">And more...</p>

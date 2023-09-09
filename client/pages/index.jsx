@@ -7,6 +7,7 @@ import Navbar from '../components/portfolio/layouts/Navbar';
 import TopScreen from '../components/portfolio/TopScreen';
 import AboutMe from '../components/portfolio/AboutMe';
 import Projects from '../components/portfolio/Projects';
+import Courses from '../components/portfolio/Courses';
 import Contacts from '../components/portfolio/Contacts';
 import Blog from '../components/portfolio/Blog';
 // import { PortfolioContext } from '../context/PortfolioContext';
@@ -26,6 +27,7 @@ function Home() {
         <main className="min-h-screen relative">
           <TopScreen />
           <AboutMe />
+          <Courses />
           <Projects />
           <Contacts />
           <Blog />

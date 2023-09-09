@@ -10,10 +10,10 @@ function NewsletterSection() {
       <h2 className="text--colors_secondary text-base font-bold montserrat mb-4">
         Join My NewsLetter
       </h2>
-      <span className="text--colors_secondary text-[12px]">
-        Join my newsletter, and get a bi-montly update(beginning from June 2023) of awesome software
-        development trends, news, tutorials, and more - to help you grow your career in full-stack
-        web development, technical writing, and blockchain development.
+      <span className="text--colors_secondary text-[12px] sm:text-[14px]">
+        Join my newsletter, and get a bi-montly update(beginning from October 2023) of awesome
+        software development trends, news, tutorials, and more - to help you grow your career in
+        full-stack web development, technical writing, and blockchain development.
       </span>
       <form className="newsletter-form mt-6">
         <div className="form-group flex">

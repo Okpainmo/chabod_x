@@ -17,6 +17,9 @@ function Footer() {
             <Link href="/#about-section" className="text--colors_primary">
               <li>My tech stack</li>
             </Link>
+            <Link href="/#courses-section" className="text--colors_primary">
+              <li>My tutorials/courses</li>
+            </Link>
             <Link href="/#projects-section" className="text--colors_primary">
               <li>My projects</li>
             </Link>

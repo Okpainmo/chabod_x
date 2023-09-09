@@ -25,6 +25,9 @@ function Navbar() {
             <Link href="/#about-section">About Me</Link>
           </li>
           <li className="poppins">
+            <Link href="/#courses-section">Tutorials/Courses</Link>
+          </li>
+          <li className="poppins">
             <Link href="/#projects-section">Projects</Link>
           </li>
           <li className="poppins">
