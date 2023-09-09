@@ -23,3 +23,5 @@
 19. Add github icon to contacts section.
 20. Add "post has already been added - proceed to add post sections" to create-post prompt - automate it to show and replace the form inputs.
 21. Adding images without section titles make the blog complete. But now, ensure that when any section header is not added in order to buttress on an image, that the empty header will not cause an issue. resolve any such issues.
+
+
