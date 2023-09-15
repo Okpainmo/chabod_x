@@ -42,7 +42,7 @@ Simply
 - Own it - it's yours.
 
 > Please, Don't forget to support the project - Even a gesture as simple as a **star** will mean a lot.
-> You can also share your tweaks and share how much unique awesome you added to your clone.
+> You can also share your tweaks and share how much unique awesomeness you added to your clone.
 
 Cheers!!! 💗.
 
