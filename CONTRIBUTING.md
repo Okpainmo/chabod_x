@@ -2,6 +2,8 @@
 
 > This file contains the contribution guide for this project. Please ensure to follow all the listed instructions strictly to ensure your pull requests are not turned down. Note that all issue titles must be in lower-case letters.
 
+> **Remember to fork the repository and have your own copy before proceeding with any of the below instructions - It is your own forked repository that you will clone not the main project repository** 
+
 # How to contribute.
 
 1. Select an issue you wish to handle.
