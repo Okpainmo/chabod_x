@@ -100,6 +100,12 @@ function AboutMe() {
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             Jquery
           </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Docker
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            AWS
+          </div>
         </div>
         <p className="mb-8">And more...</p>
         <p className="mb-8">
