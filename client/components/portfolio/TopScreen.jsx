@@ -20,7 +20,7 @@ function TopScreen() {
           I'm Andrew James Okpainmo
         </div>
         <span className="text--colors_secondary md:text-[18px]">
-          I am a full-stack developer, a blockchain developer, and a technical writer.
+          I am a full-stack developer, a blockchain developer, a technical writer and a startup enthusiast.
         </span>
         <div className="socials flex w-[100px] gap-6 mt-4 mx-auto justify-center">
           <a
