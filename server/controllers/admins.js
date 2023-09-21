@@ -13,7 +13,6 @@ const getAllAdmins = async (req, res) => {
 
 const updateAdmin = async (req, res) => {
   const { id } = req.params;
-  // const { adminName, adminBio, adminNiches, adminPassword } = req.body;
 
   try {
     const adminToUpdate = await adminModel.findById(id);
