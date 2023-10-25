@@ -1,6 +1,6 @@
 # Chabod_x - still in progress
 
-Chabod_x is a fullstack blog-folio web-app. It is a new and more powerful/advanced version of the [Chabod project](https://github.com/Okpainmo/get_chabod). It's a sleeker and super amazing NextJs/ReactJs + NodeJs Version.
+Chabod_x is a fullstack blog-folio web-app.
 
 I am building it as a brand new blog-folio (portfolio web-app + custom blog + more) project for every interested person - beginning with myself.
 
