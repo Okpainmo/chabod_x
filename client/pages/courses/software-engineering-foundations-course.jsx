@@ -40,11 +40,11 @@ function CourseParent() {
                 entrants to the world of software engineering.
                 <br />
                 <br />
-                The course is a course built to make (software engineering) beginners into
-                world-class market-ready junior software engineers. The course's core focus is
-                foundational front-end web development, but it's built with a mission to give course
-                learners a great foundation as software engineers(beyond just front-end web
-                development). The course release date is 10th December 2023, but it's{' '}
+                The course is a course built to make beginners into world-class market-ready junior
+                developers. The course's core focus is foundational front-end web development, but
+                it's built with a mission to give course learners a great foundation as software
+                engineers(beyond just front-end web development). The course release date is 10th
+                December 2023, but it's{' '}
                 <a href="https://selar.co/6f9q55" className="font-bold underline text-purple-800">
                   currently open for pre-order.
                 </a>{' '}
