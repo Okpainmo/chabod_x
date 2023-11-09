@@ -19,7 +19,7 @@ function Navbar() {
         >
           <li className="poppins">Home</li>
           <li className="poppins">About Me</li>
-          <li className="poppins">Projects</li>
+          <li className="poppins hidden">Projects</li>
           <li className="poppins">Contact</li>
           <li className="poppins">Blog</li>
         </ul>

@@ -14,8 +14,7 @@ function AboutMe() {
         </p>
         <p className="mb-8">
           I am currently a fullstack Javascript/Typescript developer(ReactJs/NextJs + NodeJs), a
-          blockchain(Solidity) developer, and a technical writer. <br /> I am also currently getting
-          a hand on devOps and cloud-computing.
+          blockchain(Solidity) developer, and a technical writer.
         </p>
         <p className="mb-8">
           In recent times, I am becoming highly interested in tech enterpreneurship and tech
@@ -105,6 +104,42 @@ function AboutMe() {
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             AWS
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            MySQL
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Sequelize
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Redis
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            RabbitMQ
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Microservices
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Swagger
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Open API
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Render
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Jest
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            React testing library
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Jaeger
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Open Telemetry
           </div>
         </div>
         <p className="mb-8">And more...</p>

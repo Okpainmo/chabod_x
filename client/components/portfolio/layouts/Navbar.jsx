@@ -27,7 +27,7 @@ function Navbar() {
           <li className="poppins">
             <Link href="/#courses-section">Tutorials/Courses</Link>
           </li>
-          <li className="poppins">
+          <li className="poppins hidden">
             <Link href="/#projects-section">Projects</Link>
           </li>
           <li className="poppins">
