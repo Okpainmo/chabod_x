@@ -14,13 +14,18 @@ function AboutMe() {
         </p>
         <p className="mb-8">
           I am currently a fullstack Javascript/Typescript developer(ReactJs/NextJs + NodeJs), a
-          blockchain(Solidity) developer, and a technical writer.
+          mobile developer(React Native), a blockchain(Solidity) developer, and a technical writer.
         </p>
         <p className="mb-8">
           In recent times, I am becoming highly interested in tech enterpreneurship and tech
-          mentorship. I am currently building my first startup - Jobjo, along side{' '}
-          <span className="underline">Zoe collectives</span> - mother company to a fleet of
-          sub-startups.
+          mentorship. I am currently building my first startup -{' '}
+          <a
+            href="https://www.linkedin.com/company/jobjohqr"
+            className="text--colors_primary underline"
+          >
+            Jobjo
+          </a>
+          .
         </p>
         <p className="mb-8">
           I publish tech content on{' '}
@@ -36,7 +41,8 @@ function AboutMe() {
         </p>
         <p className="mb-8">I love God a lot, and people do mean a lot to me as well.</p>
         <p className="mb-8">
-          Below, <i className="underline">are some key technologies</i> that I am familiar with:
+          Below, <i className="underline">are some key technologies/skills</i> that I am familiar
+          with:
         </p>
         <div className="my-skills w-full flex justify-center pt-6 pb-10 flex-wrap gap-x-3 md:w-[60%] md:mx-auto">
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
@@ -71,6 +77,9 @@ function AboutMe() {
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             NextJs
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            React Native
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             Redux tool-kit
@@ -119,6 +128,9 @@ function AboutMe() {
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             Microservices
+          </div>
+          <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
+            Software Architecture
           </div>
           <div className="skill-tag bg--primary px-3 py-1 text--colors_white mt-4 text-[10px]">
             Swagger

@@ -37,7 +37,7 @@ function Courses() {
               mission to give course learners a solid foundation as software engineers(beyond just
               front-end web development). <br />
               <br />
-              The course release date is 10th December 2023, but it's currently open for pre-order.
+              The course release month is January 2023, but it's currently open for pre-order.
             </div>
             <Link href="/project-story" className="text-[12px] hidden">
               <span className="underline text--colors_primary">Read full project story</span>

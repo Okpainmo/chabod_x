@@ -35,7 +35,7 @@ function MobileNavbar() {
           <span className="poppins text-[10px]">About Me</span>
         </div>
       </Link>
-      <Link href="/#projects-section">
+      <Link href="/#courses-section">
         <div className="flex flex-col items-center justify-between gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
