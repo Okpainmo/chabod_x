@@ -13,7 +13,40 @@ const getAllMessages = async (req, res) => {
     .json({ requestStatus: 'success', count: allMessages.length, allMessages });
 };
 
+// description: Delete message
+// request | route: DELETE | "/api/v1/message/delete-message/:id"
+// access: Public
+
+const deletedMessage = async (req, res) => {
+  const { id } = req.params;
+  //   console.log(id);
+
+  try {
+    const deleteMessage = await messageModel.findById(id);
+
+    if (!deleteMessage) {
+      return res
+        .status(404)
+        .json({ responseMessage: `admin with id: ${id} not found` });
+    }
+
+    const deleteProfile = await messageModel.findByIdAndRemove({ _id: id })
+
+    res.status(200).json({
+      responseMessage: 'Message deleted successfully',
+      deletedMessage,
+    });
+  } catch (error) {
+    res.status(500).json({
+      responseMessage: 'delete message failed: please try again',
+      error: error.message,
+    });
+
+  }
+
+}
 module.exports = {
   sendMessage,
   getAllMessages,
+  deletedMessage,
 };
