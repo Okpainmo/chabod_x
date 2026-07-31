@@ -36,9 +36,26 @@ const updatePost = async (req, res) => {
   res.status(201).json({ requestStatus: 'success', post });
 };
 
+
+const deletePost = async (req, res) => {
+  try {
+    const postId = req.params.id;
+    const deletedPost = await postModel.findByIdAndDelete({ _id: postId });
+    if (!deletedPost) {
+      return res
+        .status(404)
+        .json({ requestStatus: 'fail', message: 'Post not found' });
+    }
+    res.status(200).json({ requestStatus: 'success', deletedPost });
+  } catch (error) {
+    res.status(500).json({ requestStatus: 'error', message: error.message });
+  }
+};
+
 module.exports = {
   createPost,
   getAllPosts,
   getPost,
   updatePost,
+  deletePost
 };
